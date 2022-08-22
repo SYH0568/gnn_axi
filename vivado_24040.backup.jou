@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Aug 22 10:45:11 2022
+# Process ID: 24040
+# Current directory: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi
+# Command line: vivado -mode tcl
+# Log file: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/vivado.log
+# Journal file: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/vivado.jou
+#-----------------------------------------------------------
+source vivado
+source vivado_syn.tcl 

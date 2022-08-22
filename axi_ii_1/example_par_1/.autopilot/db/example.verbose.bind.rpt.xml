@@ -1,0 +1,61 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'example'" level="0">
+<item name = "Date">Mon Aug 22 13:45:37 2022
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">axi_ii_1</item>
+<item name = "Solution">example_par_1</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flga2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.221 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">519, 519, 2.595 us, 2.595 us, 124, 124, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Loop_edge_compute_lo_1_fu_4012">Loop_edge_compute_lo_1, 73, 73, 0.365 us, 0.365 us, 73, 73, none</column>
+<column name="grp_Loop_edge_compute_lo_fu_4224">Loop_edge_compute_lo, 72, 72, 0.360 us, 0.360 us, 72, 72, none</column>
+<column name="grp_Loop_node_compute_lo_fu_4399">Loop_node_compute_lo, 71, 71, 0.355 us, 0.355 us, 71, 71, none</column>
+<column name="grp_Loop_fetch_loop_proc_fu_4509">Loop_fetch_loop_proc, 66, 66, 0.330 us, 0.330 us, 66, 66, none</column>
+<column name="grp_Loop_out_loop_proc_fu_4851">Loop_out_loop_proc, 32, 32, 0.160 us, 0.160 us, 32, 32, none</column>
+<column name="grp_clone_vector_2_fu_5103">clone_vector_2, 62, 62, 0.310 us, 0.310 us, 62, 62, none</column>
+<column name="grp_clone_vector_3_fu_5315">clone_vector_3, 32, 32, 0.160 us, 0.160 us, 32, 32, none</column>
+<column name="grp_Loop_edge_choose_ver_1_fu_5418">Loop_edge_choose_ver_1, 32, 32, 0.160 us, 0.160 us, 32, 32, none</column>
+<column name="grp_Loop_edge_choose_ver_fu_5533">Loop_edge_choose_ver, 32, 32, 0.160 us, 0.160 us, 32, 32, none</column>
+<column name="grp_clone_vector_1_fu_5648">clone_vector_1, 62, 62, 0.310 us, 0.310 us, 62, 62, none</column>
+<column name="grp_clone_vector_fu_5730">clone_vector, 62, 62, 0.310 us, 0.310 us, 62, 62, none</column>
+<column name="grp_Loop_12_proc228_fu_5812">Loop_12_proc228, 123, 123, 0.615 us, 0.615 us, 123, 123, none</column>
+<column name="grp_Loop_1_proc225_fu_5855">Loop_1_proc225, 62, 62, 0.310 us, 0.310 us, 62, 62, none</column>
+<column name="grp_Loop_2_proc226_fu_5927">Loop_2_proc226, 122, 122, 0.610 us, 0.610 us, 122, 122, none</column>
+<column name="grp_Loop_3_proc227_fu_6139">Loop_3_proc227, 122, 122, 0.610 us, 0.610 us, 122, 122, none</column>
+<column name="call_ln0_Block_arrayctor_loop_fu_6247">Block_arrayctor_loop, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

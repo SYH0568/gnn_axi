@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Aug 19 16:05:36 2022
+# Process ID: 906
+# Current directory: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog
+# Command line: wbtcv -mode batch -source /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/xsim.dir/example/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/webtalk.log
+# Journal file: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/xsim.dir/example/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] '/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/xsim.dir/example/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Aug 19 16:05:39 2022. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Aug 19 16:05:39 2022...

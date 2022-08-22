@@ -1,0 +1,280 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_1_proc225'
+================================================================
+* Date:           Mon Aug 22 13:46:03 2022
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        axi_ii_1
+* Solution:       example_par_1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 0.619 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       62|       62| 0.310 us | 0.310 us |   62|   62|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |       60|       60|         1|          1|          1|    60|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++---------------------+---------+-------+---------+---------+-----+
+|DSP                  |        -|      -|        -|        -|    -|
+|Expression           |        -|      -|        0|       19|    -|
+|FIFO                 |        -|      -|        -|        -|    -|
+|Instance             |        -|      -|        -|        -|    -|
+|Memory               |        -|      -|        -|        -|    -|
+|Multiplexer          |        -|      -|        -|       39|    -|
+|Register             |        -|      -|       10|        -|    -|
++---------------------+---------+-------+---------+---------+-----+
+|Total                |        0|      0|       10|       58|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available SLR        |     1440|   2280|   788160|   394080|  320|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization SLR (%)  |        0|      0|    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available            |     4320|   6840|  2364480|  1182240|  960|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization (%)      |        0|      0|    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |i_fu_1070_p2           |     +    |      0|  0|   6|           6|           1|
+    |icmp_ln131_fu_1064_p2  |   icmp   |      0|  0|  11|           6|           4|
+    |ap_block_state1        |    or    |      0|  0|   2|           1|           1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0|  19|          13|           6|
+    +-----------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------+----+-----------+-----+-----------+
+    |     Name     | LUT| Input Size| Bits| Total Bits|
+    +--------------+----+-----------+-----+-----------+
+    |ap_NS_fsm     |  21|          4|    1|          4|
+    |ap_done       |   9|          2|    1|          2|
+    |i_0_reg_1053  |   9|          2|    6|         12|
+    +--------------+----+-----------+-----+-----------+
+    |Total         |  39|          8|    8|         18|
+    +--------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------+---+----+-----+-----------+
+    |     Name     | FF| LUT| Bits| Const Bits|
+    +--------------+---+----+-----+-----------+
+    |ap_CS_fsm     |  3|   0|    3|          0|
+    |ap_done_reg   |  1|   0|    1|          0|
+    |i_0_reg_1053  |  6|   0|    6|          0|
+    +--------------+---+----+-----+-----------+
+    |Total         | 10|   0|   10|          0|
+    +--------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+---------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++------------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                        |  in |    1| ap_ctrl_hs |    Loop_1_proc225   | return value |
+|ap_rst                        |  in |    1| ap_ctrl_hs |    Loop_1_proc225   | return value |
+|ap_start                      |  in |    1| ap_ctrl_hs |    Loop_1_proc225   | return value |
+|ap_done                       | out |    1| ap_ctrl_hs |    Loop_1_proc225   | return value |
+|ap_continue                   |  in |    1| ap_ctrl_hs |    Loop_1_proc225   | return value |
+|ap_idle                       | out |    1| ap_ctrl_hs |    Loop_1_proc225   | return value |
+|ap_ready                      | out |    1| ap_ctrl_hs |    Loop_1_proc225   | return value |
+|node_attr_mat_s_V_V_address0  | out |    4|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_ce0       | out |    1|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_we0       | out |    1|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_d0        | out |   14|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_q0        |  in |   14|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_address1  | out |    4|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_ce1       | out |    1|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_we1       | out |    1|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_d1        | out |   14|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_mat_s_V_V_q1        |  in |   14|  ap_memory | node_attr_mat_s_V_V |     array    |
+|node_attr_0_0_V_address0      | out |    6|  ap_memory |   node_attr_0_0_V   |     array    |
+|node_attr_0_0_V_ce0           | out |    1|  ap_memory |   node_attr_0_0_V   |     array    |
+|node_attr_0_0_V_we0           | out |    1|  ap_memory |   node_attr_0_0_V   |     array    |
+|node_attr_0_0_V_d0            | out |   14|  ap_memory |   node_attr_0_0_V   |     array    |
+|node_attr_0_1_V_address0      | out |    6|  ap_memory |   node_attr_0_1_V   |     array    |
+|node_attr_0_1_V_ce0           | out |    1|  ap_memory |   node_attr_0_1_V   |     array    |
+|node_attr_0_1_V_we0           | out |    1|  ap_memory |   node_attr_0_1_V   |     array    |
+|node_attr_0_1_V_d0            | out |   14|  ap_memory |   node_attr_0_1_V   |     array    |
+|node_attr_0_2_V_address0      | out |    6|  ap_memory |   node_attr_0_2_V   |     array    |
+|node_attr_0_2_V_ce0           | out |    1|  ap_memory |   node_attr_0_2_V   |     array    |
+|node_attr_0_2_V_we0           | out |    1|  ap_memory |   node_attr_0_2_V   |     array    |
+|node_attr_0_2_V_d0            | out |   14|  ap_memory |   node_attr_0_2_V   |     array    |
+|node_attr_1_0_V_address0      | out |    6|  ap_memory |   node_attr_1_0_V   |     array    |
+|node_attr_1_0_V_ce0           | out |    1|  ap_memory |   node_attr_1_0_V   |     array    |
+|node_attr_1_0_V_we0           | out |    1|  ap_memory |   node_attr_1_0_V   |     array    |
+|node_attr_1_0_V_d0            | out |   14|  ap_memory |   node_attr_1_0_V   |     array    |
+|node_attr_1_1_V_address0      | out |    6|  ap_memory |   node_attr_1_1_V   |     array    |
+|node_attr_1_1_V_ce0           | out |    1|  ap_memory |   node_attr_1_1_V   |     array    |
+|node_attr_1_1_V_we0           | out |    1|  ap_memory |   node_attr_1_1_V   |     array    |
+|node_attr_1_1_V_d0            | out |   14|  ap_memory |   node_attr_1_1_V   |     array    |
+|node_attr_1_2_V_address0      | out |    6|  ap_memory |   node_attr_1_2_V   |     array    |
+|node_attr_1_2_V_ce0           | out |    1|  ap_memory |   node_attr_1_2_V   |     array    |
+|node_attr_1_2_V_we0           | out |    1|  ap_memory |   node_attr_1_2_V   |     array    |
+|node_attr_1_2_V_d0            | out |   14|  ap_memory |   node_attr_1_2_V   |     array    |
+|node_attr_2_0_V_address0      | out |    6|  ap_memory |   node_attr_2_0_V   |     array    |
+|node_attr_2_0_V_ce0           | out |    1|  ap_memory |   node_attr_2_0_V   |     array    |
+|node_attr_2_0_V_we0           | out |    1|  ap_memory |   node_attr_2_0_V   |     array    |
+|node_attr_2_0_V_d0            | out |   14|  ap_memory |   node_attr_2_0_V   |     array    |
+|node_attr_2_1_V_address0      | out |    6|  ap_memory |   node_attr_2_1_V   |     array    |
+|node_attr_2_1_V_ce0           | out |    1|  ap_memory |   node_attr_2_1_V   |     array    |
+|node_attr_2_1_V_we0           | out |    1|  ap_memory |   node_attr_2_1_V   |     array    |
+|node_attr_2_1_V_d0            | out |   14|  ap_memory |   node_attr_2_1_V   |     array    |
+|node_attr_2_2_V_address0      | out |    6|  ap_memory |   node_attr_2_2_V   |     array    |
+|node_attr_2_2_V_ce0           | out |    1|  ap_memory |   node_attr_2_2_V   |     array    |
+|node_attr_2_2_V_we0           | out |    1|  ap_memory |   node_attr_2_2_V   |     array    |
+|node_attr_2_2_V_d0            | out |   14|  ap_memory |   node_attr_2_2_V   |     array    |
+|node_attr_3_0_V_address0      | out |    6|  ap_memory |   node_attr_3_0_V   |     array    |
+|node_attr_3_0_V_ce0           | out |    1|  ap_memory |   node_attr_3_0_V   |     array    |
+|node_attr_3_0_V_we0           | out |    1|  ap_memory |   node_attr_3_0_V   |     array    |
+|node_attr_3_0_V_d0            | out |   14|  ap_memory |   node_attr_3_0_V   |     array    |
+|node_attr_3_1_V_address0      | out |    6|  ap_memory |   node_attr_3_1_V   |     array    |
+|node_attr_3_1_V_ce0           | out |    1|  ap_memory |   node_attr_3_1_V   |     array    |
+|node_attr_3_1_V_we0           | out |    1|  ap_memory |   node_attr_3_1_V   |     array    |
+|node_attr_3_1_V_d0            | out |   14|  ap_memory |   node_attr_3_1_V   |     array    |
+|node_attr_3_2_V_address0      | out |    6|  ap_memory |   node_attr_3_2_V   |     array    |
+|node_attr_3_2_V_ce0           | out |    1|  ap_memory |   node_attr_3_2_V   |     array    |
+|node_attr_3_2_V_we0           | out |    1|  ap_memory |   node_attr_3_2_V   |     array    |
+|node_attr_3_2_V_d0            | out |   14|  ap_memory |   node_attr_3_2_V   |     array    |
+|node_attr_4_0_V_address0      | out |    6|  ap_memory |   node_attr_4_0_V   |     array    |
+|node_attr_4_0_V_ce0           | out |    1|  ap_memory |   node_attr_4_0_V   |     array    |
+|node_attr_4_0_V_we0           | out |    1|  ap_memory |   node_attr_4_0_V   |     array    |
+|node_attr_4_0_V_d0            | out |   14|  ap_memory |   node_attr_4_0_V   |     array    |
+|node_attr_4_1_V_address0      | out |    6|  ap_memory |   node_attr_4_1_V   |     array    |
+|node_attr_4_1_V_ce0           | out |    1|  ap_memory |   node_attr_4_1_V   |     array    |
+|node_attr_4_1_V_we0           | out |    1|  ap_memory |   node_attr_4_1_V   |     array    |
+|node_attr_4_1_V_d0            | out |   14|  ap_memory |   node_attr_4_1_V   |     array    |
+|node_attr_4_2_V_address0      | out |    6|  ap_memory |   node_attr_4_2_V   |     array    |
+|node_attr_4_2_V_ce0           | out |    1|  ap_memory |   node_attr_4_2_V   |     array    |
+|node_attr_4_2_V_we0           | out |    1|  ap_memory |   node_attr_4_2_V   |     array    |
+|node_attr_4_2_V_d0            | out |   14|  ap_memory |   node_attr_4_2_V   |     array    |
+|node_attr_5_0_V_address0      | out |    6|  ap_memory |   node_attr_5_0_V   |     array    |
+|node_attr_5_0_V_ce0           | out |    1|  ap_memory |   node_attr_5_0_V   |     array    |
+|node_attr_5_0_V_we0           | out |    1|  ap_memory |   node_attr_5_0_V   |     array    |
+|node_attr_5_0_V_d0            | out |   14|  ap_memory |   node_attr_5_0_V   |     array    |
+|node_attr_5_1_V_address0      | out |    6|  ap_memory |   node_attr_5_1_V   |     array    |
+|node_attr_5_1_V_ce0           | out |    1|  ap_memory |   node_attr_5_1_V   |     array    |
+|node_attr_5_1_V_we0           | out |    1|  ap_memory |   node_attr_5_1_V   |     array    |
+|node_attr_5_1_V_d0            | out |   14|  ap_memory |   node_attr_5_1_V   |     array    |
+|node_attr_5_2_V_address0      | out |    6|  ap_memory |   node_attr_5_2_V   |     array    |
+|node_attr_5_2_V_ce0           | out |    1|  ap_memory |   node_attr_5_2_V   |     array    |
+|node_attr_5_2_V_we0           | out |    1|  ap_memory |   node_attr_5_2_V   |     array    |
+|node_attr_5_2_V_d0            | out |   14|  ap_memory |   node_attr_5_2_V   |     array    |
+|node_attr_6_0_V_address0      | out |    6|  ap_memory |   node_attr_6_0_V   |     array    |
+|node_attr_6_0_V_ce0           | out |    1|  ap_memory |   node_attr_6_0_V   |     array    |
+|node_attr_6_0_V_we0           | out |    1|  ap_memory |   node_attr_6_0_V   |     array    |
+|node_attr_6_0_V_d0            | out |   14|  ap_memory |   node_attr_6_0_V   |     array    |
+|node_attr_6_1_V_address0      | out |    6|  ap_memory |   node_attr_6_1_V   |     array    |
+|node_attr_6_1_V_ce0           | out |    1|  ap_memory |   node_attr_6_1_V   |     array    |
+|node_attr_6_1_V_we0           | out |    1|  ap_memory |   node_attr_6_1_V   |     array    |
+|node_attr_6_1_V_d0            | out |   14|  ap_memory |   node_attr_6_1_V   |     array    |
+|node_attr_6_2_V_address0      | out |    6|  ap_memory |   node_attr_6_2_V   |     array    |
+|node_attr_6_2_V_ce0           | out |    1|  ap_memory |   node_attr_6_2_V   |     array    |
+|node_attr_6_2_V_we0           | out |    1|  ap_memory |   node_attr_6_2_V   |     array    |
+|node_attr_6_2_V_d0            | out |   14|  ap_memory |   node_attr_6_2_V   |     array    |
+|node_attr_7_0_V_address0      | out |    6|  ap_memory |   node_attr_7_0_V   |     array    |
+|node_attr_7_0_V_ce0           | out |    1|  ap_memory |   node_attr_7_0_V   |     array    |
+|node_attr_7_0_V_we0           | out |    1|  ap_memory |   node_attr_7_0_V   |     array    |
+|node_attr_7_0_V_d0            | out |   14|  ap_memory |   node_attr_7_0_V   |     array    |
+|node_attr_7_1_V_address0      | out |    6|  ap_memory |   node_attr_7_1_V   |     array    |
+|node_attr_7_1_V_ce0           | out |    1|  ap_memory |   node_attr_7_1_V   |     array    |
+|node_attr_7_1_V_we0           | out |    1|  ap_memory |   node_attr_7_1_V   |     array    |
+|node_attr_7_1_V_d0            | out |   14|  ap_memory |   node_attr_7_1_V   |     array    |
+|node_attr_7_2_V_address0      | out |    6|  ap_memory |   node_attr_7_2_V   |     array    |
+|node_attr_7_2_V_ce0           | out |    1|  ap_memory |   node_attr_7_2_V   |     array    |
+|node_attr_7_2_V_we0           | out |    1|  ap_memory |   node_attr_7_2_V   |     array    |
+|node_attr_7_2_V_d0            | out |   14|  ap_memory |   node_attr_7_2_V   |     array    |
+|node_attr_8_0_V_address0      | out |    6|  ap_memory |   node_attr_8_0_V   |     array    |
+|node_attr_8_0_V_ce0           | out |    1|  ap_memory |   node_attr_8_0_V   |     array    |
+|node_attr_8_0_V_we0           | out |    1|  ap_memory |   node_attr_8_0_V   |     array    |
+|node_attr_8_0_V_d0            | out |   14|  ap_memory |   node_attr_8_0_V   |     array    |
+|node_attr_8_1_V_address0      | out |    6|  ap_memory |   node_attr_8_1_V   |     array    |
+|node_attr_8_1_V_ce0           | out |    1|  ap_memory |   node_attr_8_1_V   |     array    |
+|node_attr_8_1_V_we0           | out |    1|  ap_memory |   node_attr_8_1_V   |     array    |
+|node_attr_8_1_V_d0            | out |   14|  ap_memory |   node_attr_8_1_V   |     array    |
+|node_attr_8_2_V_address0      | out |    6|  ap_memory |   node_attr_8_2_V   |     array    |
+|node_attr_8_2_V_ce0           | out |    1|  ap_memory |   node_attr_8_2_V   |     array    |
+|node_attr_8_2_V_we0           | out |    1|  ap_memory |   node_attr_8_2_V   |     array    |
+|node_attr_8_2_V_d0            | out |   14|  ap_memory |   node_attr_8_2_V   |     array    |
+|node_attr_9_0_V_address0      | out |    6|  ap_memory |   node_attr_9_0_V   |     array    |
+|node_attr_9_0_V_ce0           | out |    1|  ap_memory |   node_attr_9_0_V   |     array    |
+|node_attr_9_0_V_we0           | out |    1|  ap_memory |   node_attr_9_0_V   |     array    |
+|node_attr_9_0_V_d0            | out |   14|  ap_memory |   node_attr_9_0_V   |     array    |
+|node_attr_9_1_V_address0      | out |    6|  ap_memory |   node_attr_9_1_V   |     array    |
+|node_attr_9_1_V_ce0           | out |    1|  ap_memory |   node_attr_9_1_V   |     array    |
+|node_attr_9_1_V_we0           | out |    1|  ap_memory |   node_attr_9_1_V   |     array    |
+|node_attr_9_1_V_d0            | out |   14|  ap_memory |   node_attr_9_1_V   |     array    |
+|node_attr_9_2_V_address0      | out |    6|  ap_memory |   node_attr_9_2_V   |     array    |
+|node_attr_9_2_V_ce0           | out |    1|  ap_memory |   node_attr_9_2_V   |     array    |
+|node_attr_9_2_V_we0           | out |    1|  ap_memory |   node_attr_9_2_V   |     array    |
+|node_attr_9_2_V_d0            | out |   14|  ap_memory |   node_attr_9_2_V   |     array    |
+|node_attr_10_0_V_address0     | out |    6|  ap_memory |   node_attr_10_0_V  |     array    |
+|node_attr_10_0_V_ce0          | out |    1|  ap_memory |   node_attr_10_0_V  |     array    |
+|node_attr_10_0_V_we0          | out |    1|  ap_memory |   node_attr_10_0_V  |     array    |
+|node_attr_10_0_V_d0           | out |   14|  ap_memory |   node_attr_10_0_V  |     array    |
+|node_attr_10_1_V_address0     | out |    6|  ap_memory |   node_attr_10_1_V  |     array    |
+|node_attr_10_1_V_ce0          | out |    1|  ap_memory |   node_attr_10_1_V  |     array    |
+|node_attr_10_1_V_we0          | out |    1|  ap_memory |   node_attr_10_1_V  |     array    |
+|node_attr_10_1_V_d0           | out |   14|  ap_memory |   node_attr_10_1_V  |     array    |
+|node_attr_10_2_V_address0     | out |    6|  ap_memory |   node_attr_10_2_V  |     array    |
+|node_attr_10_2_V_ce0          | out |    1|  ap_memory |   node_attr_10_2_V  |     array    |
+|node_attr_10_2_V_we0          | out |    1|  ap_memory |   node_attr_10_2_V  |     array    |
+|node_attr_10_2_V_d0           | out |   14|  ap_memory |   node_attr_10_2_V  |     array    |
++------------------------------+-----+-----+------------+---------------------+--------------+
+

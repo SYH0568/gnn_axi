@@ -1,0 +1,628 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_2_proc227'
+================================================================
+* Date:           Mon Aug 22 00:16:08 2022
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        axi_ii_1
+* Solution:       example_par_1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 4.212 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     6371|     6371| 31.855 us | 31.855 us |  6371|  6371|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1         |     6370|     6370|       490|          -|          -|    13|    no    |
+        | + Loop 1.1      |      488|      488|       122|          -|          -|     4|    no    |
+        |  ++ Loop 1.1.1  |      120|      120|         1|          -|          -|   120|    no    |
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 2 
+4 --> 4 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.60>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_0_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 5 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_1_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_2_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_3_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_4_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_5_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_6_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_7_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_8_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_9_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_10_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_11_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_12_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_13_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 18 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_14_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_15_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_16_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_17_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_18_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_19_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_20_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 25 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_21_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 26 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_22_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 27 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_23_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 28 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_24_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 29 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_25_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_26_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_27_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_28_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_29_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 34 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_30_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 35 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_31_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 36 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_32_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_33_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 38 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_34_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 39 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_35_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 40 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_36_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 41 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_37_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 42 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_38_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 43 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_39_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 44 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_40_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 45 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_41_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 46 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_42_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 47 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_43_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 48 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_44_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 49 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_45_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 50 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_46_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 51 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_47_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 52 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_48_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 53 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_49_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 54 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_50_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 55 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i14* %edge_attr_mat_s_51_V_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 56 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.60ns)   --->   "br label %.preheader89"   --->   Operation 57 'br' <Predicate = true> <Delay = 0.60>
+
+State 2 <SV = 1> <Delay = 0.65>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%j16_0 = phi i4 [ 0, %newFuncRoot ], [ %j, %.preheader89.loopexit ]"   --->   Operation 58 'phi' 'j16_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.65ns)   --->   "%icmp_ln138 = icmp eq i4 %j16_0, -3" [example.cpp:138]   --->   Operation 59 'icmp' 'icmp_ln138' <Predicate = true> <Delay = 0.65> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 13, i64 13, i64 13)"   --->   Operation 60 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (0.33ns)   --->   "%j = add i4 %j16_0, 1" [example.cpp:138]   --->   Operation 61 'add' 'j' <Predicate = true> <Delay = 0.33> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "br i1 %icmp_ln138, label %.preheader86.exitStub, label %.preheader88.preheader" [example.cpp:138]   --->   Operation 62 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%shl_ln = call i6 @_ssdm_op_BitConcatenate.i6.i4.i2(i4 %j16_0, i2 0)" [example.cpp:141]   --->   Operation 63 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln138)> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.60ns)   --->   "br label %.preheader88" [example.cpp:139]   --->   Operation 64 'br' <Predicate = (!icmp_ln138)> <Delay = 0.60>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 65 'ret' <Predicate = (icmp_ln138)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.60>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%k17_0 = phi i3 [ 0, %.preheader88.preheader ], [ %k, %.preheader88.loopexit ]"   --->   Operation 66 'phi' 'k17_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%zext_ln139 = zext i3 %k17_0 to i9" [example.cpp:139]   --->   Operation 67 'zext' 'zext_ln139' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] (0.49ns)   --->   "%icmp_ln139 = icmp eq i3 %k17_0, -4" [example.cpp:139]   --->   Operation 68 'icmp' 'icmp_ln139' <Predicate = true> <Delay = 0.49> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%empty_260 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 69 'speclooptripcount' 'empty_260' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.26ns)   --->   "%k = add i3 %k17_0, 1" [example.cpp:139]   --->   Operation 70 'add' 'k' <Predicate = true> <Delay = 0.26> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "br i1 %icmp_ln139, label %.preheader89.loopexit, label %.preheader87.preheader" [example.cpp:139]   --->   Operation 71 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%zext_ln141 = zext i3 %k17_0 to i6" [example.cpp:141]   --->   Operation 72 'zext' 'zext_ln141' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.43ns)   --->   "%add_ln154 = add i6 %shl_ln, %zext_ln141" [example.cpp:141]   --->   Operation 73 'add' 'add_ln154' <Predicate = (!icmp_ln139)> <Delay = 0.43> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%trunc_ln141 = trunc i3 %k17_0 to i2" [example.cpp:141]   --->   Operation 74 'trunc' 'trunc_ln141' <Predicate = (!icmp_ln139)> <Delay = 0.00>
+ST_3 : Operation 75 [1/1] (0.60ns)   --->   "br label %.preheader87" [example.cpp:140]   --->   Operation 75 'br' <Predicate = (!icmp_ln139)> <Delay = 0.60>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "br label %.preheader89"   --->   Operation 76 'br' <Predicate = (icmp_ln139)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 4.21>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%i18_0 = phi i7 [ %i, %0 ], [ 0, %.preheader87.preheader ]"   --->   Operation 77 'phi' 'i18_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.59ns)   --->   "%icmp_ln140 = icmp eq i7 %i18_0, -8" [example.cpp:140]   --->   Operation 78 'icmp' 'icmp_ln140' <Predicate = true> <Delay = 0.59> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%empty_261 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 120, i64 120, i64 120)"   --->   Operation 79 'speclooptripcount' 'empty_261' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/1] (0.40ns)   --->   "%i = add i7 %i18_0, 1" [example.cpp:140]   --->   Operation 80 'add' 'i' <Predicate = true> <Delay = 0.40> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "br i1 %icmp_ln140, label %.preheader88.loopexit, label %2" [example.cpp:140]   --->   Operation 81 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/1] (0.00ns)   --->   "%shl_ln141_1 = call i9 @_ssdm_op_BitConcatenate.i9.i7.i2(i7 %i18_0, i2 0)" [example.cpp:141]   --->   Operation 82 'bitconcatenate' 'shl_ln141_1' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 83 [1/1] (0.51ns)   --->   "%add_ln141 = add i9 %zext_ln139, %shl_ln141_1" [example.cpp:141]   --->   Operation 83 'add' 'add_ln141' <Predicate = (!icmp_ln140)> <Delay = 0.51> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 84 [1/1] (0.59ns)   --->   "switch i6 %add_ln154, label %branch51 [
+    i6 0, label %branch064
+    i6 1, label %branch165
+    i6 2, label %branch266
+    i6 3, label %branch367
+    i6 4, label %branch468
+    i6 5, label %branch569
+    i6 6, label %branch670
+    i6 7, label %branch771
+    i6 8, label %branch872
+    i6 9, label %branch973
+    i6 10, label %branch1074
+    i6 11, label %branch1175
+    i6 12, label %branch1276
+    i6 13, label %branch1377
+    i6 14, label %branch1478
+    i6 15, label %branch1579
+    i6 16, label %branch1680
+    i6 17, label %branch1781
+    i6 18, label %branch1882
+    i6 19, label %branch1983
+    i6 20, label %branch2084
+    i6 21, label %branch2185
+    i6 22, label %branch2286
+    i6 23, label %branch2387
+    i6 24, label %branch2488
+    i6 25, label %branch2589
+    i6 26, label %branch2690
+    i6 27, label %branch2791
+    i6 28, label %branch2892
+    i6 29, label %branch2993
+    i6 30, label %branch3094
+    i6 31, label %branch3195
+    i6 -32, label %branch3296
+    i6 -31, label %branch3397
+    i6 -30, label %branch3498
+    i6 -29, label %branch3599
+    i6 -28, label %branch36100
+    i6 -27, label %branch37
+    i6 -26, label %branch38
+    i6 -25, label %branch39
+    i6 -24, label %branch40
+    i6 -23, label %branch41
+    i6 -22, label %branch42
+    i6 -21, label %branch43
+    i6 -20, label %branch44
+    i6 -19, label %branch45
+    i6 -18, label %branch46
+    i6 -17, label %branch47
+    i6 -16, label %branch48
+    i6 -15, label %branch49
+    i6 -14, label %branch50
+  ]" [example.cpp:141]   --->   Operation 84 'switch' <Predicate = (!icmp_ln140)> <Delay = 0.59>
+ST_4 : Operation 85 [1/1] (1.45ns)   --->   "%tmp_V_76 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_50_V_V)" [example.cpp:141]   --->   Operation 85 'read' 'tmp_V_76' <Predicate = (!icmp_ln140 & add_ln154 == 50)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 86 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 86 'br' <Predicate = (!icmp_ln140 & add_ln154 == 50)> <Delay = 1.59>
+ST_4 : Operation 87 [1/1] (1.45ns)   --->   "%tmp_V_75 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_49_V_V)" [example.cpp:141]   --->   Operation 87 'read' 'tmp_V_75' <Predicate = (!icmp_ln140 & add_ln154 == 49)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 88 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 88 'br' <Predicate = (!icmp_ln140 & add_ln154 == 49)> <Delay = 1.59>
+ST_4 : Operation 89 [1/1] (1.45ns)   --->   "%tmp_V_74 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_48_V_V)" [example.cpp:141]   --->   Operation 89 'read' 'tmp_V_74' <Predicate = (!icmp_ln140 & add_ln154 == 48)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 90 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 90 'br' <Predicate = (!icmp_ln140 & add_ln154 == 48)> <Delay = 1.59>
+ST_4 : Operation 91 [1/1] (1.45ns)   --->   "%tmp_V_73 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_47_V_V)" [example.cpp:141]   --->   Operation 91 'read' 'tmp_V_73' <Predicate = (!icmp_ln140 & add_ln154 == 47)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 92 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 92 'br' <Predicate = (!icmp_ln140 & add_ln154 == 47)> <Delay = 1.59>
+ST_4 : Operation 93 [1/1] (1.45ns)   --->   "%tmp_V_72 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_46_V_V)" [example.cpp:141]   --->   Operation 93 'read' 'tmp_V_72' <Predicate = (!icmp_ln140 & add_ln154 == 46)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 94 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 94 'br' <Predicate = (!icmp_ln140 & add_ln154 == 46)> <Delay = 1.59>
+ST_4 : Operation 95 [1/1] (1.45ns)   --->   "%tmp_V_71 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_45_V_V)" [example.cpp:141]   --->   Operation 95 'read' 'tmp_V_71' <Predicate = (!icmp_ln140 & add_ln154 == 45)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 96 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 96 'br' <Predicate = (!icmp_ln140 & add_ln154 == 45)> <Delay = 1.59>
+ST_4 : Operation 97 [1/1] (1.45ns)   --->   "%tmp_V_70 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_44_V_V)" [example.cpp:141]   --->   Operation 97 'read' 'tmp_V_70' <Predicate = (!icmp_ln140 & add_ln154 == 44)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 98 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 98 'br' <Predicate = (!icmp_ln140 & add_ln154 == 44)> <Delay = 1.59>
+ST_4 : Operation 99 [1/1] (1.45ns)   --->   "%tmp_V_69 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_43_V_V)" [example.cpp:141]   --->   Operation 99 'read' 'tmp_V_69' <Predicate = (!icmp_ln140 & add_ln154 == 43)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 100 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 100 'br' <Predicate = (!icmp_ln140 & add_ln154 == 43)> <Delay = 1.59>
+ST_4 : Operation 101 [1/1] (1.45ns)   --->   "%tmp_V_68 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_42_V_V)" [example.cpp:141]   --->   Operation 101 'read' 'tmp_V_68' <Predicate = (!icmp_ln140 & add_ln154 == 42)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 102 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 102 'br' <Predicate = (!icmp_ln140 & add_ln154 == 42)> <Delay = 1.59>
+ST_4 : Operation 103 [1/1] (1.45ns)   --->   "%tmp_V_67 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_41_V_V)" [example.cpp:141]   --->   Operation 103 'read' 'tmp_V_67' <Predicate = (!icmp_ln140 & add_ln154 == 41)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 104 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 104 'br' <Predicate = (!icmp_ln140 & add_ln154 == 41)> <Delay = 1.59>
+ST_4 : Operation 105 [1/1] (1.45ns)   --->   "%tmp_V_66 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_40_V_V)" [example.cpp:141]   --->   Operation 105 'read' 'tmp_V_66' <Predicate = (!icmp_ln140 & add_ln154 == 40)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 106 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 106 'br' <Predicate = (!icmp_ln140 & add_ln154 == 40)> <Delay = 1.59>
+ST_4 : Operation 107 [1/1] (1.45ns)   --->   "%tmp_V_65 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_39_V_V)" [example.cpp:141]   --->   Operation 107 'read' 'tmp_V_65' <Predicate = (!icmp_ln140 & add_ln154 == 39)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 108 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 108 'br' <Predicate = (!icmp_ln140 & add_ln154 == 39)> <Delay = 1.59>
+ST_4 : Operation 109 [1/1] (1.45ns)   --->   "%tmp_V_64 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_38_V_V)" [example.cpp:141]   --->   Operation 109 'read' 'tmp_V_64' <Predicate = (!icmp_ln140 & add_ln154 == 38)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 110 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 110 'br' <Predicate = (!icmp_ln140 & add_ln154 == 38)> <Delay = 1.59>
+ST_4 : Operation 111 [1/1] (1.45ns)   --->   "%tmp_V_63 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_37_V_V)" [example.cpp:141]   --->   Operation 111 'read' 'tmp_V_63' <Predicate = (!icmp_ln140 & add_ln154 == 37)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 112 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 112 'br' <Predicate = (!icmp_ln140 & add_ln154 == 37)> <Delay = 1.59>
+ST_4 : Operation 113 [1/1] (1.45ns)   --->   "%tmp_V_62 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_36_V_V)" [example.cpp:141]   --->   Operation 113 'read' 'tmp_V_62' <Predicate = (!icmp_ln140 & add_ln154 == 36)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 114 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 114 'br' <Predicate = (!icmp_ln140 & add_ln154 == 36)> <Delay = 1.59>
+ST_4 : Operation 115 [1/1] (1.45ns)   --->   "%tmp_V_61 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_35_V_V)" [example.cpp:141]   --->   Operation 115 'read' 'tmp_V_61' <Predicate = (!icmp_ln140 & add_ln154 == 35)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 116 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 116 'br' <Predicate = (!icmp_ln140 & add_ln154 == 35)> <Delay = 1.59>
+ST_4 : Operation 117 [1/1] (1.45ns)   --->   "%tmp_V_60 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_34_V_V)" [example.cpp:141]   --->   Operation 117 'read' 'tmp_V_60' <Predicate = (!icmp_ln140 & add_ln154 == 34)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 118 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 118 'br' <Predicate = (!icmp_ln140 & add_ln154 == 34)> <Delay = 1.59>
+ST_4 : Operation 119 [1/1] (1.45ns)   --->   "%tmp_V_59 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_33_V_V)" [example.cpp:141]   --->   Operation 119 'read' 'tmp_V_59' <Predicate = (!icmp_ln140 & add_ln154 == 33)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 120 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 120 'br' <Predicate = (!icmp_ln140 & add_ln154 == 33)> <Delay = 1.59>
+ST_4 : Operation 121 [1/1] (1.45ns)   --->   "%tmp_V_58 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_32_V_V)" [example.cpp:141]   --->   Operation 121 'read' 'tmp_V_58' <Predicate = (!icmp_ln140 & add_ln154 == 32)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 122 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 122 'br' <Predicate = (!icmp_ln140 & add_ln154 == 32)> <Delay = 1.59>
+ST_4 : Operation 123 [1/1] (1.45ns)   --->   "%tmp_V_57 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_31_V_V)" [example.cpp:141]   --->   Operation 123 'read' 'tmp_V_57' <Predicate = (!icmp_ln140 & add_ln154 == 31)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 124 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 124 'br' <Predicate = (!icmp_ln140 & add_ln154 == 31)> <Delay = 1.59>
+ST_4 : Operation 125 [1/1] (1.45ns)   --->   "%tmp_V_56 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_30_V_V)" [example.cpp:141]   --->   Operation 125 'read' 'tmp_V_56' <Predicate = (!icmp_ln140 & add_ln154 == 30)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 126 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 126 'br' <Predicate = (!icmp_ln140 & add_ln154 == 30)> <Delay = 1.59>
+ST_4 : Operation 127 [1/1] (1.45ns)   --->   "%tmp_V_55 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_29_V_V)" [example.cpp:141]   --->   Operation 127 'read' 'tmp_V_55' <Predicate = (!icmp_ln140 & add_ln154 == 29)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 128 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 128 'br' <Predicate = (!icmp_ln140 & add_ln154 == 29)> <Delay = 1.59>
+ST_4 : Operation 129 [1/1] (1.45ns)   --->   "%tmp_V_54 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_28_V_V)" [example.cpp:141]   --->   Operation 129 'read' 'tmp_V_54' <Predicate = (!icmp_ln140 & add_ln154 == 28)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 130 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 130 'br' <Predicate = (!icmp_ln140 & add_ln154 == 28)> <Delay = 1.59>
+ST_4 : Operation 131 [1/1] (1.45ns)   --->   "%tmp_V_53 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_27_V_V)" [example.cpp:141]   --->   Operation 131 'read' 'tmp_V_53' <Predicate = (!icmp_ln140 & add_ln154 == 27)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 132 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 132 'br' <Predicate = (!icmp_ln140 & add_ln154 == 27)> <Delay = 1.59>
+ST_4 : Operation 133 [1/1] (1.45ns)   --->   "%tmp_V_52 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_26_V_V)" [example.cpp:141]   --->   Operation 133 'read' 'tmp_V_52' <Predicate = (!icmp_ln140 & add_ln154 == 26)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 134 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 134 'br' <Predicate = (!icmp_ln140 & add_ln154 == 26)> <Delay = 1.59>
+ST_4 : Operation 135 [1/1] (1.45ns)   --->   "%tmp_V_51 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_25_V_V)" [example.cpp:141]   --->   Operation 135 'read' 'tmp_V_51' <Predicate = (!icmp_ln140 & add_ln154 == 25)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 136 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 136 'br' <Predicate = (!icmp_ln140 & add_ln154 == 25)> <Delay = 1.59>
+ST_4 : Operation 137 [1/1] (1.45ns)   --->   "%tmp_V_50 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_24_V_V)" [example.cpp:141]   --->   Operation 137 'read' 'tmp_V_50' <Predicate = (!icmp_ln140 & add_ln154 == 24)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 138 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 138 'br' <Predicate = (!icmp_ln140 & add_ln154 == 24)> <Delay = 1.59>
+ST_4 : Operation 139 [1/1] (1.45ns)   --->   "%tmp_V_49 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_23_V_V)" [example.cpp:141]   --->   Operation 139 'read' 'tmp_V_49' <Predicate = (!icmp_ln140 & add_ln154 == 23)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 140 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 140 'br' <Predicate = (!icmp_ln140 & add_ln154 == 23)> <Delay = 1.59>
+ST_4 : Operation 141 [1/1] (1.45ns)   --->   "%tmp_V_48 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_22_V_V)" [example.cpp:141]   --->   Operation 141 'read' 'tmp_V_48' <Predicate = (!icmp_ln140 & add_ln154 == 22)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 142 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 142 'br' <Predicate = (!icmp_ln140 & add_ln154 == 22)> <Delay = 1.59>
+ST_4 : Operation 143 [1/1] (1.45ns)   --->   "%tmp_V_47 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_21_V_V)" [example.cpp:141]   --->   Operation 143 'read' 'tmp_V_47' <Predicate = (!icmp_ln140 & add_ln154 == 21)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 144 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 144 'br' <Predicate = (!icmp_ln140 & add_ln154 == 21)> <Delay = 1.59>
+ST_4 : Operation 145 [1/1] (1.45ns)   --->   "%tmp_V_46 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_20_V_V)" [example.cpp:141]   --->   Operation 145 'read' 'tmp_V_46' <Predicate = (!icmp_ln140 & add_ln154 == 20)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 146 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 146 'br' <Predicate = (!icmp_ln140 & add_ln154 == 20)> <Delay = 1.59>
+ST_4 : Operation 147 [1/1] (1.45ns)   --->   "%tmp_V_45 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_19_V_V)" [example.cpp:141]   --->   Operation 147 'read' 'tmp_V_45' <Predicate = (!icmp_ln140 & add_ln154 == 19)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 148 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 148 'br' <Predicate = (!icmp_ln140 & add_ln154 == 19)> <Delay = 1.59>
+ST_4 : Operation 149 [1/1] (1.45ns)   --->   "%tmp_V_44 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_18_V_V)" [example.cpp:141]   --->   Operation 149 'read' 'tmp_V_44' <Predicate = (!icmp_ln140 & add_ln154 == 18)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 150 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 150 'br' <Predicate = (!icmp_ln140 & add_ln154 == 18)> <Delay = 1.59>
+ST_4 : Operation 151 [1/1] (1.45ns)   --->   "%tmp_V_43 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_17_V_V)" [example.cpp:141]   --->   Operation 151 'read' 'tmp_V_43' <Predicate = (!icmp_ln140 & add_ln154 == 17)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 152 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 152 'br' <Predicate = (!icmp_ln140 & add_ln154 == 17)> <Delay = 1.59>
+ST_4 : Operation 153 [1/1] (1.45ns)   --->   "%tmp_V_42 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_16_V_V)" [example.cpp:141]   --->   Operation 153 'read' 'tmp_V_42' <Predicate = (!icmp_ln140 & add_ln154 == 16)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 154 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 154 'br' <Predicate = (!icmp_ln140 & add_ln154 == 16)> <Delay = 1.59>
+ST_4 : Operation 155 [1/1] (1.45ns)   --->   "%tmp_V_41 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_15_V_V)" [example.cpp:141]   --->   Operation 155 'read' 'tmp_V_41' <Predicate = (!icmp_ln140 & add_ln154 == 15)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 156 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 156 'br' <Predicate = (!icmp_ln140 & add_ln154 == 15)> <Delay = 1.59>
+ST_4 : Operation 157 [1/1] (1.45ns)   --->   "%tmp_V_40 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_14_V_V)" [example.cpp:141]   --->   Operation 157 'read' 'tmp_V_40' <Predicate = (!icmp_ln140 & add_ln154 == 14)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 158 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 158 'br' <Predicate = (!icmp_ln140 & add_ln154 == 14)> <Delay = 1.59>
+ST_4 : Operation 159 [1/1] (1.45ns)   --->   "%tmp_V_39 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_13_V_V)" [example.cpp:141]   --->   Operation 159 'read' 'tmp_V_39' <Predicate = (!icmp_ln140 & add_ln154 == 13)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 160 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 160 'br' <Predicate = (!icmp_ln140 & add_ln154 == 13)> <Delay = 1.59>
+ST_4 : Operation 161 [1/1] (1.45ns)   --->   "%tmp_V_38 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_12_V_V)" [example.cpp:141]   --->   Operation 161 'read' 'tmp_V_38' <Predicate = (!icmp_ln140 & add_ln154 == 12)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 162 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 162 'br' <Predicate = (!icmp_ln140 & add_ln154 == 12)> <Delay = 1.59>
+ST_4 : Operation 163 [1/1] (1.45ns)   --->   "%tmp_V_37 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_11_V_V)" [example.cpp:141]   --->   Operation 163 'read' 'tmp_V_37' <Predicate = (!icmp_ln140 & add_ln154 == 11)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 164 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 164 'br' <Predicate = (!icmp_ln140 & add_ln154 == 11)> <Delay = 1.59>
+ST_4 : Operation 165 [1/1] (1.45ns)   --->   "%tmp_V_36 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_10_V_V)" [example.cpp:141]   --->   Operation 165 'read' 'tmp_V_36' <Predicate = (!icmp_ln140 & add_ln154 == 10)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 166 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 166 'br' <Predicate = (!icmp_ln140 & add_ln154 == 10)> <Delay = 1.59>
+ST_4 : Operation 167 [1/1] (1.45ns)   --->   "%tmp_V_35 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_9_V_V)" [example.cpp:141]   --->   Operation 167 'read' 'tmp_V_35' <Predicate = (!icmp_ln140 & add_ln154 == 9)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 168 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 168 'br' <Predicate = (!icmp_ln140 & add_ln154 == 9)> <Delay = 1.59>
+ST_4 : Operation 169 [1/1] (1.45ns)   --->   "%tmp_V_34 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_8_V_V)" [example.cpp:141]   --->   Operation 169 'read' 'tmp_V_34' <Predicate = (!icmp_ln140 & add_ln154 == 8)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 170 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 170 'br' <Predicate = (!icmp_ln140 & add_ln154 == 8)> <Delay = 1.59>
+ST_4 : Operation 171 [1/1] (1.45ns)   --->   "%tmp_V_33 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_7_V_V)" [example.cpp:141]   --->   Operation 171 'read' 'tmp_V_33' <Predicate = (!icmp_ln140 & add_ln154 == 7)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 172 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 172 'br' <Predicate = (!icmp_ln140 & add_ln154 == 7)> <Delay = 1.59>
+ST_4 : Operation 173 [1/1] (1.45ns)   --->   "%tmp_V_32 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_6_V_V)" [example.cpp:141]   --->   Operation 173 'read' 'tmp_V_32' <Predicate = (!icmp_ln140 & add_ln154 == 6)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 174 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 174 'br' <Predicate = (!icmp_ln140 & add_ln154 == 6)> <Delay = 1.59>
+ST_4 : Operation 175 [1/1] (1.45ns)   --->   "%tmp_V_31 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_5_V_V)" [example.cpp:141]   --->   Operation 175 'read' 'tmp_V_31' <Predicate = (!icmp_ln140 & add_ln154 == 5)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 176 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 176 'br' <Predicate = (!icmp_ln140 & add_ln154 == 5)> <Delay = 1.59>
+ST_4 : Operation 177 [1/1] (1.45ns)   --->   "%tmp_V_30 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_4_V_V)" [example.cpp:141]   --->   Operation 177 'read' 'tmp_V_30' <Predicate = (!icmp_ln140 & add_ln154 == 4)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 178 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 178 'br' <Predicate = (!icmp_ln140 & add_ln154 == 4)> <Delay = 1.59>
+ST_4 : Operation 179 [1/1] (1.45ns)   --->   "%tmp_V_29 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_3_V_V)" [example.cpp:141]   --->   Operation 179 'read' 'tmp_V_29' <Predicate = (!icmp_ln140 & add_ln154 == 3)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 180 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 180 'br' <Predicate = (!icmp_ln140 & add_ln154 == 3)> <Delay = 1.59>
+ST_4 : Operation 181 [1/1] (1.45ns)   --->   "%tmp_V_28 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_2_V_V)" [example.cpp:141]   --->   Operation 181 'read' 'tmp_V_28' <Predicate = (!icmp_ln140 & add_ln154 == 2)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 182 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 182 'br' <Predicate = (!icmp_ln140 & add_ln154 == 2)> <Delay = 1.59>
+ST_4 : Operation 183 [1/1] (1.45ns)   --->   "%tmp_V_27 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_1_V_V)" [example.cpp:141]   --->   Operation 183 'read' 'tmp_V_27' <Predicate = (!icmp_ln140 & add_ln154 == 1)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 184 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 184 'br' <Predicate = (!icmp_ln140 & add_ln154 == 1)> <Delay = 1.59>
+ST_4 : Operation 185 [1/1] (1.45ns)   --->   "%tmp_V_26 = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_0_V_V)" [example.cpp:141]   --->   Operation 185 'read' 'tmp_V_26' <Predicate = (!icmp_ln140 & add_ln154 == 0)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 186 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 186 'br' <Predicate = (!icmp_ln140 & add_ln154 == 0)> <Delay = 1.59>
+ST_4 : Operation 187 [1/1] (1.45ns)   --->   "%tmp_V = call i14 @_ssdm_op_Read.ap_fifo.volatile.i14P(i14* %edge_attr_mat_s_51_V_V)" [example.cpp:141]   --->   Operation 187 'read' 'tmp_V' <Predicate = (!icmp_ln140 & add_ln154 == 63) | (!icmp_ln140 & add_ln154 == 62) | (!icmp_ln140 & add_ln154 == 61) | (!icmp_ln140 & add_ln154 == 60) | (!icmp_ln140 & add_ln154 == 59) | (!icmp_ln140 & add_ln154 == 58) | (!icmp_ln140 & add_ln154 == 57) | (!icmp_ln140 & add_ln154 == 56) | (!icmp_ln140 & add_ln154 == 55) | (!icmp_ln140 & add_ln154 == 54) | (!icmp_ln140 & add_ln154 == 53) | (!icmp_ln140 & add_ln154 == 52) | (!icmp_ln140 & add_ln154 == 51)> <Delay = 1.45> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.45> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 14> <Depth = 0> <FIFO>
+ST_4 : Operation 188 [1/1] (1.59ns)   --->   "br label %1" [example.cpp:141]   --->   Operation 188 'br' <Predicate = (!icmp_ln140 & add_ln154 == 63) | (!icmp_ln140 & add_ln154 == 62) | (!icmp_ln140 & add_ln154 == 61) | (!icmp_ln140 & add_ln154 == 60) | (!icmp_ln140 & add_ln154 == 59) | (!icmp_ln140 & add_ln154 == 58) | (!icmp_ln140 & add_ln154 == 57) | (!icmp_ln140 & add_ln154 == 56) | (!icmp_ln140 & add_ln154 == 55) | (!icmp_ln140 & add_ln154 == 54) | (!icmp_ln140 & add_ln154 == 53) | (!icmp_ln140 & add_ln154 == 52) | (!icmp_ln140 & add_ln154 == 51)> <Delay = 1.59>
+ST_4 : Operation 189 [1/1] (0.00ns)   --->   "%tmp_V_0 = phi i14 [ %tmp_V, %branch51 ], [ %tmp_V_76, %branch50 ], [ %tmp_V_75, %branch49 ], [ %tmp_V_74, %branch48 ], [ %tmp_V_73, %branch47 ], [ %tmp_V_72, %branch46 ], [ %tmp_V_71, %branch45 ], [ %tmp_V_70, %branch44 ], [ %tmp_V_69, %branch43 ], [ %tmp_V_68, %branch42 ], [ %tmp_V_67, %branch41 ], [ %tmp_V_66, %branch40 ], [ %tmp_V_65, %branch39 ], [ %tmp_V_64, %branch38 ], [ %tmp_V_63, %branch37 ], [ %tmp_V_62, %branch36100 ], [ %tmp_V_61, %branch3599 ], [ %tmp_V_60, %branch3498 ], [ %tmp_V_59, %branch3397 ], [ %tmp_V_58, %branch3296 ], [ %tmp_V_57, %branch3195 ], [ %tmp_V_56, %branch3094 ], [ %tmp_V_55, %branch2993 ], [ %tmp_V_54, %branch2892 ], [ %tmp_V_53, %branch2791 ], [ %tmp_V_52, %branch2690 ], [ %tmp_V_51, %branch2589 ], [ %tmp_V_50, %branch2488 ], [ %tmp_V_49, %branch2387 ], [ %tmp_V_48, %branch2286 ], [ %tmp_V_47, %branch2185 ], [ %tmp_V_46, %branch2084 ], [ %tmp_V_45, %branch1983 ], [ %tmp_V_44, %branch1882 ], [ %tmp_V_43, %branch1781 ], [ %tmp_V_42, %branch1680 ], [ %tmp_V_41, %branch1579 ], [ %tmp_V_40, %branch1478 ], [ %tmp_V_39, %branch1377 ], [ %tmp_V_38, %branch1276 ], [ %tmp_V_37, %branch1175 ], [ %tmp_V_36, %branch1074 ], [ %tmp_V_35, %branch973 ], [ %tmp_V_34, %branch872 ], [ %tmp_V_33, %branch771 ], [ %tmp_V_32, %branch670 ], [ %tmp_V_31, %branch569 ], [ %tmp_V_30, %branch468 ], [ %tmp_V_29, %branch367 ], [ %tmp_V_28, %branch266 ], [ %tmp_V_27, %branch165 ], [ %tmp_V_26, %branch064 ]"   --->   Operation 189 'phi' 'tmp_V_0' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 190 [1/1] (0.00ns)   --->   "%lshr_ln = call i7 @_ssdm_op_PartSelect.i7.i9.i32.i32(i9 %add_ln141, i32 2, i32 8)" [example.cpp:141]   --->   Operation 190 'partselect' 'lshr_ln' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 191 [1/1] (0.00ns)   --->   "%zext_ln203_2 = zext i7 %lshr_ln to i64" [example.cpp:141]   --->   Operation 191 'zext' 'zext_ln203_2' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 192 [1/1] (0.00ns)   --->   "%edge_attr_0_0_V_ad = getelementptr [120 x i14]* %edge_attr_0_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 192 'getelementptr' 'edge_attr_0_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 193 [1/1] (0.00ns)   --->   "%edge_attr_0_1_V_ad = getelementptr [120 x i14]* %edge_attr_0_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 193 'getelementptr' 'edge_attr_0_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 194 [1/1] (0.00ns)   --->   "%edge_attr_0_2_V_ad = getelementptr [120 x i14]* %edge_attr_0_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 194 'getelementptr' 'edge_attr_0_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 195 [1/1] (0.00ns)   --->   "%edge_attr_0_3_V_ad = getelementptr [120 x i14]* %edge_attr_0_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 195 'getelementptr' 'edge_attr_0_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 196 [1/1] (0.00ns)   --->   "%edge_attr_1_0_V_ad = getelementptr [120 x i14]* %edge_attr_1_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 196 'getelementptr' 'edge_attr_1_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 197 [1/1] (0.00ns)   --->   "%edge_attr_1_1_V_ad = getelementptr [120 x i14]* %edge_attr_1_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 197 'getelementptr' 'edge_attr_1_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 198 [1/1] (0.00ns)   --->   "%edge_attr_1_2_V_ad = getelementptr [120 x i14]* %edge_attr_1_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 198 'getelementptr' 'edge_attr_1_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 199 [1/1] (0.00ns)   --->   "%edge_attr_1_3_V_ad = getelementptr [120 x i14]* %edge_attr_1_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 199 'getelementptr' 'edge_attr_1_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 200 [1/1] (0.00ns)   --->   "%edge_attr_2_0_V_ad = getelementptr [120 x i14]* %edge_attr_2_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 200 'getelementptr' 'edge_attr_2_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 201 [1/1] (0.00ns)   --->   "%edge_attr_2_1_V_ad = getelementptr [120 x i14]* %edge_attr_2_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 201 'getelementptr' 'edge_attr_2_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 202 [1/1] (0.00ns)   --->   "%edge_attr_2_2_V_ad = getelementptr [120 x i14]* %edge_attr_2_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 202 'getelementptr' 'edge_attr_2_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 203 [1/1] (0.00ns)   --->   "%edge_attr_2_3_V_ad = getelementptr [120 x i14]* %edge_attr_2_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 203 'getelementptr' 'edge_attr_2_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 204 [1/1] (0.00ns)   --->   "%edge_attr_3_0_V_ad = getelementptr [120 x i14]* %edge_attr_3_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 204 'getelementptr' 'edge_attr_3_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 205 [1/1] (0.00ns)   --->   "%edge_attr_3_1_V_ad = getelementptr [120 x i14]* %edge_attr_3_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 205 'getelementptr' 'edge_attr_3_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 206 [1/1] (0.00ns)   --->   "%edge_attr_3_2_V_ad = getelementptr [120 x i14]* %edge_attr_3_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 206 'getelementptr' 'edge_attr_3_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 207 [1/1] (0.00ns)   --->   "%edge_attr_3_3_V_ad = getelementptr [120 x i14]* %edge_attr_3_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 207 'getelementptr' 'edge_attr_3_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 208 [1/1] (0.00ns)   --->   "%edge_attr_4_0_V_ad = getelementptr [120 x i14]* %edge_attr_4_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 208 'getelementptr' 'edge_attr_4_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 209 [1/1] (0.00ns)   --->   "%edge_attr_4_1_V_ad = getelementptr [120 x i14]* %edge_attr_4_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 209 'getelementptr' 'edge_attr_4_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 210 [1/1] (0.00ns)   --->   "%edge_attr_4_2_V_ad = getelementptr [120 x i14]* %edge_attr_4_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 210 'getelementptr' 'edge_attr_4_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 211 [1/1] (0.00ns)   --->   "%edge_attr_4_3_V_ad = getelementptr [120 x i14]* %edge_attr_4_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 211 'getelementptr' 'edge_attr_4_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 212 [1/1] (0.00ns)   --->   "%edge_attr_5_0_V_ad = getelementptr [120 x i14]* %edge_attr_5_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 212 'getelementptr' 'edge_attr_5_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 213 [1/1] (0.00ns)   --->   "%edge_attr_5_1_V_ad = getelementptr [120 x i14]* %edge_attr_5_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 213 'getelementptr' 'edge_attr_5_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 214 [1/1] (0.00ns)   --->   "%edge_attr_5_2_V_ad = getelementptr [120 x i14]* %edge_attr_5_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 214 'getelementptr' 'edge_attr_5_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 215 [1/1] (0.00ns)   --->   "%edge_attr_5_3_V_ad = getelementptr [120 x i14]* %edge_attr_5_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 215 'getelementptr' 'edge_attr_5_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 216 [1/1] (0.00ns)   --->   "%edge_attr_6_0_V_ad = getelementptr [120 x i14]* %edge_attr_6_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 216 'getelementptr' 'edge_attr_6_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 217 [1/1] (0.00ns)   --->   "%edge_attr_6_1_V_ad = getelementptr [120 x i14]* %edge_attr_6_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 217 'getelementptr' 'edge_attr_6_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 218 [1/1] (0.00ns)   --->   "%edge_attr_6_2_V_ad = getelementptr [120 x i14]* %edge_attr_6_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 218 'getelementptr' 'edge_attr_6_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 219 [1/1] (0.00ns)   --->   "%edge_attr_6_3_V_ad = getelementptr [120 x i14]* %edge_attr_6_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 219 'getelementptr' 'edge_attr_6_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 220 [1/1] (0.00ns)   --->   "%edge_attr_7_0_V_ad = getelementptr [120 x i14]* %edge_attr_7_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 220 'getelementptr' 'edge_attr_7_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 221 [1/1] (0.00ns)   --->   "%edge_attr_7_1_V_ad = getelementptr [120 x i14]* %edge_attr_7_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 221 'getelementptr' 'edge_attr_7_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 222 [1/1] (0.00ns)   --->   "%edge_attr_7_2_V_ad = getelementptr [120 x i14]* %edge_attr_7_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 222 'getelementptr' 'edge_attr_7_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 223 [1/1] (0.00ns)   --->   "%edge_attr_7_3_V_ad = getelementptr [120 x i14]* %edge_attr_7_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 223 'getelementptr' 'edge_attr_7_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 224 [1/1] (0.00ns)   --->   "%edge_attr_8_0_V_ad = getelementptr [120 x i14]* %edge_attr_8_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 224 'getelementptr' 'edge_attr_8_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 225 [1/1] (0.00ns)   --->   "%edge_attr_8_1_V_ad = getelementptr [120 x i14]* %edge_attr_8_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 225 'getelementptr' 'edge_attr_8_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 226 [1/1] (0.00ns)   --->   "%edge_attr_8_2_V_ad = getelementptr [120 x i14]* %edge_attr_8_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 226 'getelementptr' 'edge_attr_8_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 227 [1/1] (0.00ns)   --->   "%edge_attr_8_3_V_ad = getelementptr [120 x i14]* %edge_attr_8_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 227 'getelementptr' 'edge_attr_8_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 228 [1/1] (0.00ns)   --->   "%edge_attr_9_0_V_ad = getelementptr [120 x i14]* %edge_attr_9_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 228 'getelementptr' 'edge_attr_9_0_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 229 [1/1] (0.00ns)   --->   "%edge_attr_9_1_V_ad = getelementptr [120 x i14]* %edge_attr_9_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 229 'getelementptr' 'edge_attr_9_1_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 230 [1/1] (0.00ns)   --->   "%edge_attr_9_2_V_ad = getelementptr [120 x i14]* %edge_attr_9_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 230 'getelementptr' 'edge_attr_9_2_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 231 [1/1] (0.00ns)   --->   "%edge_attr_9_3_V_ad = getelementptr [120 x i14]* %edge_attr_9_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 231 'getelementptr' 'edge_attr_9_3_V_ad' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 232 [1/1] (0.00ns)   --->   "%edge_attr_10_0_V_a = getelementptr [120 x i14]* %edge_attr_10_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 232 'getelementptr' 'edge_attr_10_0_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 233 [1/1] (0.00ns)   --->   "%edge_attr_10_1_V_a = getelementptr [120 x i14]* %edge_attr_10_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 233 'getelementptr' 'edge_attr_10_1_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 234 [1/1] (0.00ns)   --->   "%edge_attr_10_2_V_a = getelementptr [120 x i14]* %edge_attr_10_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 234 'getelementptr' 'edge_attr_10_2_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 235 [1/1] (0.00ns)   --->   "%edge_attr_10_3_V_a = getelementptr [120 x i14]* %edge_attr_10_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 235 'getelementptr' 'edge_attr_10_3_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 236 [1/1] (0.00ns)   --->   "%edge_attr_11_0_V_a = getelementptr [120 x i14]* %edge_attr_11_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 236 'getelementptr' 'edge_attr_11_0_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 237 [1/1] (0.00ns)   --->   "%edge_attr_11_1_V_a = getelementptr [120 x i14]* %edge_attr_11_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 237 'getelementptr' 'edge_attr_11_1_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 238 [1/1] (0.00ns)   --->   "%edge_attr_11_2_V_a = getelementptr [120 x i14]* %edge_attr_11_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 238 'getelementptr' 'edge_attr_11_2_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 239 [1/1] (0.00ns)   --->   "%edge_attr_11_3_V_a = getelementptr [120 x i14]* %edge_attr_11_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 239 'getelementptr' 'edge_attr_11_3_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 240 [1/1] (0.00ns)   --->   "%edge_attr_12_0_V_a = getelementptr [120 x i14]* %edge_attr_12_0_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 240 'getelementptr' 'edge_attr_12_0_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 241 [1/1] (0.00ns)   --->   "%edge_attr_12_1_V_a = getelementptr [120 x i14]* %edge_attr_12_1_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 241 'getelementptr' 'edge_attr_12_1_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 242 [1/1] (0.00ns)   --->   "%edge_attr_12_2_V_a = getelementptr [120 x i14]* %edge_attr_12_2_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 242 'getelementptr' 'edge_attr_12_2_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 243 [1/1] (0.00ns)   --->   "%edge_attr_12_3_V_a = getelementptr [120 x i14]* %edge_attr_12_3_V, i64 0, i64 %zext_ln203_2" [example.cpp:141]   --->   Operation 243 'getelementptr' 'edge_attr_12_3_V_a' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 244 [1/1] (0.63ns)   --->   "switch i4 %j16_0, label %branch23 [
+    i4 0, label %branch11
+    i4 1, label %branch12
+    i4 2, label %branch13
+    i4 3, label %branch14
+    i4 4, label %branch15
+    i4 5, label %branch16
+    i4 6, label %branch17
+    i4 7, label %branch18
+    i4 -8, label %branch19
+    i4 -7, label %branch20
+    i4 -6, label %branch21
+    i4 -5, label %branch22
+  ]" [example.cpp:141]   --->   Operation 244 'switch' <Predicate = (!icmp_ln140)> <Delay = 0.63>
+ST_4 : Operation 245 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch93 [
+    i2 0, label %branch90
+    i2 1, label %branch91
+    i2 -2, label %branch92
+  ]" [example.cpp:141]   --->   Operation 245 'switch' <Predicate = (!icmp_ln140 & j16_0 == 11)> <Delay = 0.65>
+ST_4 : Operation 246 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_11_2_V_a, align 2" [example.cpp:141]   --->   Operation 246 'store' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 247 [1/1] (0.00ns)   --->   "br label %branch22863" [example.cpp:141]   --->   Operation 247 'br' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 248 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_11_1_V_a, align 2" [example.cpp:141]   --->   Operation 248 'store' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 249 [1/1] (0.00ns)   --->   "br label %branch22863" [example.cpp:141]   --->   Operation 249 'br' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 250 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_11_0_V_a, align 2" [example.cpp:141]   --->   Operation 250 'store' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 251 [1/1] (0.00ns)   --->   "br label %branch22863" [example.cpp:141]   --->   Operation 251 'br' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 252 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_11_3_V_a, align 2" [example.cpp:141]   --->   Operation 252 'store' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 253 [1/1] (0.00ns)   --->   "br label %branch22863" [example.cpp:141]   --->   Operation 253 'br' <Predicate = (!icmp_ln140 & j16_0 == 11 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 254 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 254 'br' <Predicate = (!icmp_ln140 & j16_0 == 11)> <Delay = 0.00>
+ST_4 : Operation 255 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch89 [
+    i2 0, label %branch86
+    i2 1, label %branch87
+    i2 -2, label %branch88
+  ]" [example.cpp:141]   --->   Operation 255 'switch' <Predicate = (!icmp_ln140 & j16_0 == 10)> <Delay = 0.65>
+ST_4 : Operation 256 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_10_2_V_a, align 2" [example.cpp:141]   --->   Operation 256 'store' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 257 [1/1] (0.00ns)   --->   "br label %branch21806" [example.cpp:141]   --->   Operation 257 'br' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 258 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_10_1_V_a, align 2" [example.cpp:141]   --->   Operation 258 'store' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 259 [1/1] (0.00ns)   --->   "br label %branch21806" [example.cpp:141]   --->   Operation 259 'br' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 260 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_10_0_V_a, align 2" [example.cpp:141]   --->   Operation 260 'store' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 261 [1/1] (0.00ns)   --->   "br label %branch21806" [example.cpp:141]   --->   Operation 261 'br' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 262 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_10_3_V_a, align 2" [example.cpp:141]   --->   Operation 262 'store' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 263 [1/1] (0.00ns)   --->   "br label %branch21806" [example.cpp:141]   --->   Operation 263 'br' <Predicate = (!icmp_ln140 & j16_0 == 10 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 264 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 264 'br' <Predicate = (!icmp_ln140 & j16_0 == 10)> <Delay = 0.00>
+ST_4 : Operation 265 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch85 [
+    i2 0, label %branch82
+    i2 1, label %branch83
+    i2 -2, label %branch84
+  ]" [example.cpp:141]   --->   Operation 265 'switch' <Predicate = (!icmp_ln140 & j16_0 == 9)> <Delay = 0.65>
+ST_4 : Operation 266 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_9_2_V_ad, align 2" [example.cpp:141]   --->   Operation 266 'store' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 267 [1/1] (0.00ns)   --->   "br label %branch20749" [example.cpp:141]   --->   Operation 267 'br' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 268 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_9_1_V_ad, align 2" [example.cpp:141]   --->   Operation 268 'store' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 269 [1/1] (0.00ns)   --->   "br label %branch20749" [example.cpp:141]   --->   Operation 269 'br' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 270 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_9_0_V_ad, align 2" [example.cpp:141]   --->   Operation 270 'store' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 271 [1/1] (0.00ns)   --->   "br label %branch20749" [example.cpp:141]   --->   Operation 271 'br' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 272 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_9_3_V_ad, align 2" [example.cpp:141]   --->   Operation 272 'store' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 273 [1/1] (0.00ns)   --->   "br label %branch20749" [example.cpp:141]   --->   Operation 273 'br' <Predicate = (!icmp_ln140 & j16_0 == 9 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 274 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 274 'br' <Predicate = (!icmp_ln140 & j16_0 == 9)> <Delay = 0.00>
+ST_4 : Operation 275 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch81 [
+    i2 0, label %branch78
+    i2 1, label %branch79
+    i2 -2, label %branch80
+  ]" [example.cpp:141]   --->   Operation 275 'switch' <Predicate = (!icmp_ln140 & j16_0 == 8)> <Delay = 0.65>
+ST_4 : Operation 276 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_8_2_V_ad, align 2" [example.cpp:141]   --->   Operation 276 'store' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 277 [1/1] (0.00ns)   --->   "br label %branch19692" [example.cpp:141]   --->   Operation 277 'br' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 278 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_8_1_V_ad, align 2" [example.cpp:141]   --->   Operation 278 'store' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 279 [1/1] (0.00ns)   --->   "br label %branch19692" [example.cpp:141]   --->   Operation 279 'br' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 280 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_8_0_V_ad, align 2" [example.cpp:141]   --->   Operation 280 'store' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 281 [1/1] (0.00ns)   --->   "br label %branch19692" [example.cpp:141]   --->   Operation 281 'br' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 282 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_8_3_V_ad, align 2" [example.cpp:141]   --->   Operation 282 'store' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 283 [1/1] (0.00ns)   --->   "br label %branch19692" [example.cpp:141]   --->   Operation 283 'br' <Predicate = (!icmp_ln140 & j16_0 == 8 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 284 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 284 'br' <Predicate = (!icmp_ln140 & j16_0 == 8)> <Delay = 0.00>
+ST_4 : Operation 285 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch77 [
+    i2 0, label %branch74
+    i2 1, label %branch75
+    i2 -2, label %branch76
+  ]" [example.cpp:141]   --->   Operation 285 'switch' <Predicate = (!icmp_ln140 & j16_0 == 7)> <Delay = 0.65>
+ST_4 : Operation 286 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_7_2_V_ad, align 2" [example.cpp:141]   --->   Operation 286 'store' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 287 [1/1] (0.00ns)   --->   "br label %branch18635" [example.cpp:141]   --->   Operation 287 'br' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 288 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_7_1_V_ad, align 2" [example.cpp:141]   --->   Operation 288 'store' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 289 [1/1] (0.00ns)   --->   "br label %branch18635" [example.cpp:141]   --->   Operation 289 'br' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 290 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_7_0_V_ad, align 2" [example.cpp:141]   --->   Operation 290 'store' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 291 [1/1] (0.00ns)   --->   "br label %branch18635" [example.cpp:141]   --->   Operation 291 'br' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 292 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_7_3_V_ad, align 2" [example.cpp:141]   --->   Operation 292 'store' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 293 [1/1] (0.00ns)   --->   "br label %branch18635" [example.cpp:141]   --->   Operation 293 'br' <Predicate = (!icmp_ln140 & j16_0 == 7 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 294 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 294 'br' <Predicate = (!icmp_ln140 & j16_0 == 7)> <Delay = 0.00>
+ST_4 : Operation 295 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch73 [
+    i2 0, label %branch70
+    i2 1, label %branch71
+    i2 -2, label %branch72
+  ]" [example.cpp:141]   --->   Operation 295 'switch' <Predicate = (!icmp_ln140 & j16_0 == 6)> <Delay = 0.65>
+ST_4 : Operation 296 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_6_2_V_ad, align 2" [example.cpp:141]   --->   Operation 296 'store' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 297 [1/1] (0.00ns)   --->   "br label %branch17578" [example.cpp:141]   --->   Operation 297 'br' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 298 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_6_1_V_ad, align 2" [example.cpp:141]   --->   Operation 298 'store' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 299 [1/1] (0.00ns)   --->   "br label %branch17578" [example.cpp:141]   --->   Operation 299 'br' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 300 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_6_0_V_ad, align 2" [example.cpp:141]   --->   Operation 300 'store' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 301 [1/1] (0.00ns)   --->   "br label %branch17578" [example.cpp:141]   --->   Operation 301 'br' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 302 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_6_3_V_ad, align 2" [example.cpp:141]   --->   Operation 302 'store' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 303 [1/1] (0.00ns)   --->   "br label %branch17578" [example.cpp:141]   --->   Operation 303 'br' <Predicate = (!icmp_ln140 & j16_0 == 6 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 304 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 304 'br' <Predicate = (!icmp_ln140 & j16_0 == 6)> <Delay = 0.00>
+ST_4 : Operation 305 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch69 [
+    i2 0, label %branch66
+    i2 1, label %branch67
+    i2 -2, label %branch68
+  ]" [example.cpp:141]   --->   Operation 305 'switch' <Predicate = (!icmp_ln140 & j16_0 == 5)> <Delay = 0.65>
+ST_4 : Operation 306 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_5_2_V_ad, align 2" [example.cpp:141]   --->   Operation 306 'store' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 307 [1/1] (0.00ns)   --->   "br label %branch16521" [example.cpp:141]   --->   Operation 307 'br' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 308 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_5_1_V_ad, align 2" [example.cpp:141]   --->   Operation 308 'store' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 309 [1/1] (0.00ns)   --->   "br label %branch16521" [example.cpp:141]   --->   Operation 309 'br' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 310 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_5_0_V_ad, align 2" [example.cpp:141]   --->   Operation 310 'store' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 311 [1/1] (0.00ns)   --->   "br label %branch16521" [example.cpp:141]   --->   Operation 311 'br' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 312 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_5_3_V_ad, align 2" [example.cpp:141]   --->   Operation 312 'store' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 313 [1/1] (0.00ns)   --->   "br label %branch16521" [example.cpp:141]   --->   Operation 313 'br' <Predicate = (!icmp_ln140 & j16_0 == 5 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 314 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 314 'br' <Predicate = (!icmp_ln140 & j16_0 == 5)> <Delay = 0.00>
+ST_4 : Operation 315 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch65 [
+    i2 0, label %branch62
+    i2 1, label %branch63
+    i2 -2, label %branch64
+  ]" [example.cpp:141]   --->   Operation 315 'switch' <Predicate = (!icmp_ln140 & j16_0 == 4)> <Delay = 0.65>
+ST_4 : Operation 316 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_4_2_V_ad, align 2" [example.cpp:141]   --->   Operation 316 'store' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 317 [1/1] (0.00ns)   --->   "br label %branch15464" [example.cpp:141]   --->   Operation 317 'br' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 318 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_4_1_V_ad, align 2" [example.cpp:141]   --->   Operation 318 'store' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 319 [1/1] (0.00ns)   --->   "br label %branch15464" [example.cpp:141]   --->   Operation 319 'br' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 320 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_4_0_V_ad, align 2" [example.cpp:141]   --->   Operation 320 'store' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 321 [1/1] (0.00ns)   --->   "br label %branch15464" [example.cpp:141]   --->   Operation 321 'br' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 322 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_4_3_V_ad, align 2" [example.cpp:141]   --->   Operation 322 'store' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 323 [1/1] (0.00ns)   --->   "br label %branch15464" [example.cpp:141]   --->   Operation 323 'br' <Predicate = (!icmp_ln140 & j16_0 == 4 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 324 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 324 'br' <Predicate = (!icmp_ln140 & j16_0 == 4)> <Delay = 0.00>
+ST_4 : Operation 325 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch61 [
+    i2 0, label %branch58
+    i2 1, label %branch59
+    i2 -2, label %branch60
+  ]" [example.cpp:141]   --->   Operation 325 'switch' <Predicate = (!icmp_ln140 & j16_0 == 3)> <Delay = 0.65>
+ST_4 : Operation 326 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_3_2_V_ad, align 2" [example.cpp:141]   --->   Operation 326 'store' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 327 [1/1] (0.00ns)   --->   "br label %branch14407" [example.cpp:141]   --->   Operation 327 'br' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 328 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_3_1_V_ad, align 2" [example.cpp:141]   --->   Operation 328 'store' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 329 [1/1] (0.00ns)   --->   "br label %branch14407" [example.cpp:141]   --->   Operation 329 'br' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 330 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_3_0_V_ad, align 2" [example.cpp:141]   --->   Operation 330 'store' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 331 [1/1] (0.00ns)   --->   "br label %branch14407" [example.cpp:141]   --->   Operation 331 'br' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 332 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_3_3_V_ad, align 2" [example.cpp:141]   --->   Operation 332 'store' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 333 [1/1] (0.00ns)   --->   "br label %branch14407" [example.cpp:141]   --->   Operation 333 'br' <Predicate = (!icmp_ln140 & j16_0 == 3 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 334 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 334 'br' <Predicate = (!icmp_ln140 & j16_0 == 3)> <Delay = 0.00>
+ST_4 : Operation 335 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch57 [
+    i2 0, label %branch54
+    i2 1, label %branch55
+    i2 -2, label %branch56
+  ]" [example.cpp:141]   --->   Operation 335 'switch' <Predicate = (!icmp_ln140 & j16_0 == 2)> <Delay = 0.65>
+ST_4 : Operation 336 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_2_2_V_ad, align 2" [example.cpp:141]   --->   Operation 336 'store' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 337 [1/1] (0.00ns)   --->   "br label %branch13350" [example.cpp:141]   --->   Operation 337 'br' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 338 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_2_1_V_ad, align 2" [example.cpp:141]   --->   Operation 338 'store' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 339 [1/1] (0.00ns)   --->   "br label %branch13350" [example.cpp:141]   --->   Operation 339 'br' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 340 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_2_0_V_ad, align 2" [example.cpp:141]   --->   Operation 340 'store' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 341 [1/1] (0.00ns)   --->   "br label %branch13350" [example.cpp:141]   --->   Operation 341 'br' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 342 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_2_3_V_ad, align 2" [example.cpp:141]   --->   Operation 342 'store' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 343 [1/1] (0.00ns)   --->   "br label %branch13350" [example.cpp:141]   --->   Operation 343 'br' <Predicate = (!icmp_ln140 & j16_0 == 2 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 344 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 344 'br' <Predicate = (!icmp_ln140 & j16_0 == 2)> <Delay = 0.00>
+ST_4 : Operation 345 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch53 [
+    i2 0, label %branch50292
+    i2 1, label %branch51293
+    i2 -2, label %branch52
+  ]" [example.cpp:141]   --->   Operation 345 'switch' <Predicate = (!icmp_ln140 & j16_0 == 1)> <Delay = 0.65>
+ST_4 : Operation 346 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_1_2_V_ad, align 2" [example.cpp:141]   --->   Operation 346 'store' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 347 [1/1] (0.00ns)   --->   "br label %branch12291" [example.cpp:141]   --->   Operation 347 'br' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 348 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_1_1_V_ad, align 2" [example.cpp:141]   --->   Operation 348 'store' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 349 [1/1] (0.00ns)   --->   "br label %branch12291" [example.cpp:141]   --->   Operation 349 'br' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 350 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_1_0_V_ad, align 2" [example.cpp:141]   --->   Operation 350 'store' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 351 [1/1] (0.00ns)   --->   "br label %branch12291" [example.cpp:141]   --->   Operation 351 'br' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 352 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_1_3_V_ad, align 2" [example.cpp:141]   --->   Operation 352 'store' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 353 [1/1] (0.00ns)   --->   "br label %branch12291" [example.cpp:141]   --->   Operation 353 'br' <Predicate = (!icmp_ln140 & j16_0 == 1 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 354 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 354 'br' <Predicate = (!icmp_ln140 & j16_0 == 1)> <Delay = 0.00>
+ST_4 : Operation 355 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch49234 [
+    i2 0, label %branch46231
+    i2 1, label %branch47232
+    i2 -2, label %branch48233
+  ]" [example.cpp:141]   --->   Operation 355 'switch' <Predicate = (!icmp_ln140 & j16_0 == 0)> <Delay = 0.65>
+ST_4 : Operation 356 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_0_2_V_ad, align 2" [example.cpp:141]   --->   Operation 356 'store' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 357 [1/1] (0.00ns)   --->   "br label %branch11230" [example.cpp:141]   --->   Operation 357 'br' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 358 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_0_1_V_ad, align 2" [example.cpp:141]   --->   Operation 358 'store' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 359 [1/1] (0.00ns)   --->   "br label %branch11230" [example.cpp:141]   --->   Operation 359 'br' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 360 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_0_0_V_ad, align 2" [example.cpp:141]   --->   Operation 360 'store' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 361 [1/1] (0.00ns)   --->   "br label %branch11230" [example.cpp:141]   --->   Operation 361 'br' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 362 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_0_3_V_ad, align 2" [example.cpp:141]   --->   Operation 362 'store' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 363 [1/1] (0.00ns)   --->   "br label %branch11230" [example.cpp:141]   --->   Operation 363 'br' <Predicate = (!icmp_ln140 & j16_0 == 0 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 364 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 364 'br' <Predicate = (!icmp_ln140 & j16_0 == 0)> <Delay = 0.00>
+ST_4 : Operation 365 [1/1] (0.65ns)   --->   "switch i2 %trunc_ln141, label %branch97 [
+    i2 0, label %branch94
+    i2 1, label %branch95
+    i2 -2, label %branch96
+  ]" [example.cpp:141]   --->   Operation 365 'switch' <Predicate = (!icmp_ln140 & j16_0 == 15) | (!icmp_ln140 & j16_0 == 14) | (!icmp_ln140 & j16_0 == 13) | (!icmp_ln140 & j16_0 == 12)> <Delay = 0.65>
+ST_4 : Operation 366 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_12_2_V_a, align 2" [example.cpp:141]   --->   Operation 366 'store' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 2) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 2) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 2) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 2)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 367 [1/1] (0.00ns)   --->   "br label %branch23920" [example.cpp:141]   --->   Operation 367 'br' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 2) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 2) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 2) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 2)> <Delay = 0.00>
+ST_4 : Operation 368 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_12_1_V_a, align 2" [example.cpp:141]   --->   Operation 368 'store' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 1) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 1) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 1) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 1)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 369 [1/1] (0.00ns)   --->   "br label %branch23920" [example.cpp:141]   --->   Operation 369 'br' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 1) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 1) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 1) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 1)> <Delay = 0.00>
+ST_4 : Operation 370 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_12_0_V_a, align 2" [example.cpp:141]   --->   Operation 370 'store' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 0) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 0) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 0) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 0)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 371 [1/1] (0.00ns)   --->   "br label %branch23920" [example.cpp:141]   --->   Operation 371 'br' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 0) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 0) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 0) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 0)> <Delay = 0.00>
+ST_4 : Operation 372 [1/1] (1.15ns)   --->   "store i14 %tmp_V_0, i14* %edge_attr_12_3_V_a, align 2" [example.cpp:141]   --->   Operation 372 'store' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 3) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 3) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 3) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 3)> <Delay = 1.15> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.15> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 14> <Depth = 120> <RAM>
+ST_4 : Operation 373 [1/1] (0.00ns)   --->   "br label %branch23920" [example.cpp:141]   --->   Operation 373 'br' <Predicate = (!icmp_ln140 & j16_0 == 15 & trunc_ln141 == 3) | (!icmp_ln140 & j16_0 == 14 & trunc_ln141 == 3) | (!icmp_ln140 & j16_0 == 13 & trunc_ln141 == 3) | (!icmp_ln140 & j16_0 == 12 & trunc_ln141 == 3)> <Delay = 0.00>
+ST_4 : Operation 374 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:141]   --->   Operation 374 'br' <Predicate = (!icmp_ln140 & j16_0 == 15) | (!icmp_ln140 & j16_0 == 14) | (!icmp_ln140 & j16_0 == 13) | (!icmp_ln140 & j16_0 == 12)> <Delay = 0.00>
+ST_4 : Operation 375 [1/1] (0.00ns)   --->   "br label %.preheader87" [example.cpp:140]   --->   Operation 375 'br' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_4 : Operation 376 [1/1] (0.00ns)   --->   "br label %.preheader88"   --->   Operation 376 'br' <Predicate = (icmp_ln140)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 0.603ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('j') with incoming values : ('j', example.cpp:138) [159]  (0.603 ns)
+
+ <State 2>: 0.656ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', example.cpp:138) [159]  (0 ns)
+	'icmp' operation ('icmp_ln138', example.cpp:138) [160]  (0.656 ns)
+
+ <State 3>: 0.603ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', example.cpp:140) [180]  (0.603 ns)
+
+ <State 4>: 4.21ns
+The critical path consists of the following:
+	fifo read on port 'edge_attr_mat_s_50_V_V' (example.cpp:141) [190]  (1.46 ns)
+	multiplexor before 'phi' operation ('tmp.V') with incoming values : ('tmp.V', example.cpp:141) [346]  (1.6 ns)
+	'phi' operation ('tmp.V') with incoming values : ('tmp.V', example.cpp:141) [346]  (0 ns)
+	'store' operation ('store_ln141', example.cpp:141) of variable 'tmp.V' on array 'edge_attr_11_0_V' [411]  (1.16 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

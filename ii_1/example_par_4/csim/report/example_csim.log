@@ -1,0 +1,1374 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../example_test.cpp in debug mode
+   Compiling ../../../../example.cpp in debug mode
+   Generating csim.exe
+load with /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/memory/dataflow_stable_content/test_graph/graph1/input_data.txt 
+load with /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/memory/dataflow_stable_content/test_graph/graph1/target_data.txt 
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.945313 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.984375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.953125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.0078125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.015625 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.976563 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.976563 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.953125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.945313 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.726563 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0.4375 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.765625 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.828125 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.984375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.789063 
+
+different answer 
+golden answer:0 
+my answer:0.8125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.953125 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.976563 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.976563 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.828125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.140625 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.90625 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.046875 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.96875 
+
+different answer 
+golden answer:0 
+my answer:0.882813 
+
+different answer 
+golden answer:0 
+my answer:0.625 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.96875 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.710938 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.515625 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.976563 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.617188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0.3125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.710938 
+
+different answer 
+golden answer:0 
+my answer:0.539063 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.75 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.8125 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.984375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.96875 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.523438 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.585938 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.570313 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.867188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.632813 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.914063 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.015625 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0.015625 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0.03125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.695313 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.984375 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0.0546875 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.953125 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.984375 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.78125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0.171875 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.59375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.984375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.585938 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.632813 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.945313 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.921875 
+
+different answer 
+golden answer:0 
+my answer:0.929688 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.0078125 
+
+different answer 
+golden answer:1 
+my answer:0.4375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.0078125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0.03125 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.757813 
+
+different answer 
+golden answer:1 
+my answer:0.484375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.890625 
+
+different answer 
+golden answer:1 
+my answer:0.0078125 
+
+different answer 
+golden answer:0 
+my answer:0.945313 
+
+different answer 
+golden answer:0 
+my answer:0.765625 
+
+different answer 
+golden answer:1 
+my answer:0.0078125 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:0 
+my answer:0.65625 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.929688 
+
+different answer 
+golden answer:1 
+my answer:0.117188 
+
+different answer 
+golden answer:0 
+my answer:0.992188 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+different answer 
+golden answer:0 
+my answer:0.9375 
+
+different answer 
+golden answer:1 
+my answer:0 
+
+total different answer: 341 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

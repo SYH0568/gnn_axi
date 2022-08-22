@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Aug 19 16:05:36 2022
+# Process ID: 906
+# Current directory: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog
+# Command line: wbtcv -mode batch -source /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/xsim.dir/example/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/webtalk.log
+# Journal file: /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/xsim.dir/example/webtalk/xsim_webtalk.tcl -notrace

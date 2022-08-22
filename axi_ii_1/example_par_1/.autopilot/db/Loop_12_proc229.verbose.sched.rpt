@@ -1,0 +1,293 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_12_proc229'
+================================================================
+* Date:           Mon Aug 22 00:18:03 2022
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        axi_ii_1
+* Solution:       example_par_1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 1.213 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     4707|     4707| 23.535 us | 23.535 us |  4707|  4707|   none  |
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |     4706|     4706|       362|          -|          -|    13|    no    |
+        | + Loop 1.1  |      360|      360|         3|          -|          -|   120|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 2 
+4 --> 5 
+5 --> 3 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.60>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_12_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 6 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_11_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 7 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_10_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_9_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_8_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 10 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_7_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 11 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_6_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 12 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_5_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 13 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_4_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_3_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_2_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_1_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %layer11_out_s_0_V_V, [5 x i8]* @p_str27, i32 1, i32 1, [5 x i8]* @p_str28, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 18 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.60ns)   --->   "br label %"edgeblock<ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, ap_uint<14>, ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, 1, 11ul, 13ul, 60ul, 120ul, 3ul, 4ul, 1ul, true, true>.exit""   --->   Operation 19 'br' <Predicate = true> <Delay = 0.60>
+
+State 2 <SV = 1> <Delay = 0.65>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%j68_0 = phi i4 [ 0, %newFuncRoot ], [ %j, %"edgeblock<ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, ap_uint<14>, ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, 1, 11ul, 13ul, 60ul, 120ul, 3ul, 4ul, 1ul, true, true>.exit.loopexit" ]"   --->   Operation 20 'phi' 'j68_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.65ns)   --->   "%icmp_ln207 = icmp eq i4 %j68_0, -3" [example.cpp:207]   --->   Operation 21 'icmp' 'icmp_ln207' <Predicate = true> <Delay = 0.65> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 13, i64 13, i64 13)"   --->   Operation 22 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.33ns)   --->   "%j = add i4 %j68_0, 1" [example.cpp:207]   --->   Operation 23 'add' 'j' <Predicate = true> <Delay = 0.33> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "br i1 %icmp_ln207, label %.exitStub, label %.preheader.preheader" [example.cpp:207]   --->   Operation 24 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.60ns)   --->   "br label %.preheader" [example.cpp:209]   --->   Operation 25 'br' <Predicate = (!icmp_ln207)> <Delay = 0.60>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "ret void"   --->   Operation 26 'ret' <Predicate = (icmp_ln207)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.62>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%i70_0 = phi i7 [ %i, %0 ], [ 0, %.preheader.preheader ]"   --->   Operation 27 'phi' 'i70_0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.59ns)   --->   "%icmp_ln209 = icmp eq i7 %i70_0, -8" [example.cpp:209]   --->   Operation 28 'icmp' 'icmp_ln209' <Predicate = true> <Delay = 0.59> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.59> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%empty_264 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 120, i64 120, i64 120)"   --->   Operation 29 'speclooptripcount' 'empty_264' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.40ns)   --->   "%i = add i7 %i70_0, 1" [example.cpp:209]   --->   Operation 30 'add' 'i' <Predicate = true> <Delay = 0.40> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "br i1 %icmp_ln209, label %"edgeblock<ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, ap_uint<14>, ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, 1, 11ul, 13ul, 60ul, 120ul, 3ul, 4ul, 1ul, true, true>.exit.loopexit", label %1" [example.cpp:209]   --->   Operation 31 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln210 = zext i7 %i70_0 to i64" [example.cpp:210]   --->   Operation 32 'zext' 'zext_ln210' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%layer11_out_0_addr = getelementptr [120 x i7]* %layer11_out_0, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 33 'getelementptr' 'layer11_out_0_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 34 [2/2] (0.62ns)   --->   "%layer11_out_0_load = load i7* %layer11_out_0_addr, align 1" [example.cpp:210]   --->   Operation 34 'load' 'layer11_out_0_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%layer11_out_1_addr = getelementptr [120 x i7]* %layer11_out_1, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 35 'getelementptr' 'layer11_out_1_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 36 [2/2] (0.62ns)   --->   "%layer11_out_1_load = load i7* %layer11_out_1_addr, align 1" [example.cpp:210]   --->   Operation 36 'load' 'layer11_out_1_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%layer11_out_2_addr = getelementptr [120 x i7]* %layer11_out_2, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 37 'getelementptr' 'layer11_out_2_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 38 [2/2] (0.62ns)   --->   "%layer11_out_2_load = load i7* %layer11_out_2_addr, align 1" [example.cpp:210]   --->   Operation 38 'load' 'layer11_out_2_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%layer11_out_3_addr = getelementptr [120 x i7]* %layer11_out_3, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 39 'getelementptr' 'layer11_out_3_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 40 [2/2] (0.62ns)   --->   "%layer11_out_3_load = load i7* %layer11_out_3_addr, align 1" [example.cpp:210]   --->   Operation 40 'load' 'layer11_out_3_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%layer11_out_4_addr = getelementptr [120 x i7]* %layer11_out_4, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 41 'getelementptr' 'layer11_out_4_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 42 [2/2] (0.62ns)   --->   "%layer11_out_4_load = load i7* %layer11_out_4_addr, align 1" [example.cpp:210]   --->   Operation 42 'load' 'layer11_out_4_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "%layer11_out_5_addr = getelementptr [120 x i7]* %layer11_out_5, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 43 'getelementptr' 'layer11_out_5_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 44 [2/2] (0.62ns)   --->   "%layer11_out_5_load = load i7* %layer11_out_5_addr, align 1" [example.cpp:210]   --->   Operation 44 'load' 'layer11_out_5_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%layer11_out_6_addr = getelementptr [120 x i7]* %layer11_out_6, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 45 'getelementptr' 'layer11_out_6_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 46 [2/2] (0.62ns)   --->   "%layer11_out_6_load = load i7* %layer11_out_6_addr, align 1" [example.cpp:210]   --->   Operation 46 'load' 'layer11_out_6_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%layer11_out_7_addr = getelementptr [120 x i7]* %layer11_out_7, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 47 'getelementptr' 'layer11_out_7_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 48 [2/2] (0.62ns)   --->   "%layer11_out_7_load = load i7* %layer11_out_7_addr, align 1" [example.cpp:210]   --->   Operation 48 'load' 'layer11_out_7_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%layer11_out_8_addr = getelementptr [120 x i7]* %layer11_out_8, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 49 'getelementptr' 'layer11_out_8_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 50 [2/2] (0.62ns)   --->   "%layer11_out_8_load = load i7* %layer11_out_8_addr, align 1" [example.cpp:210]   --->   Operation 50 'load' 'layer11_out_8_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%layer11_out_9_addr = getelementptr [120 x i7]* %layer11_out_9, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 51 'getelementptr' 'layer11_out_9_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 52 [2/2] (0.62ns)   --->   "%layer11_out_9_load = load i7* %layer11_out_9_addr, align 1" [example.cpp:210]   --->   Operation 52 'load' 'layer11_out_9_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%layer11_out_10_addr = getelementptr [120 x i7]* %layer11_out_10, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 53 'getelementptr' 'layer11_out_10_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 54 [2/2] (0.62ns)   --->   "%layer11_out_10_load = load i7* %layer11_out_10_addr, align 1" [example.cpp:210]   --->   Operation 54 'load' 'layer11_out_10_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%layer11_out_11_addr = getelementptr [120 x i7]* %layer11_out_11, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 55 'getelementptr' 'layer11_out_11_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 56 [2/2] (0.62ns)   --->   "%layer11_out_11_load = load i7* %layer11_out_11_addr, align 1" [example.cpp:210]   --->   Operation 56 'load' 'layer11_out_11_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%layer11_out_12_addr = getelementptr [120 x i7]* %layer11_out_12, i64 0, i64 %zext_ln210" [example.cpp:210]   --->   Operation 57 'getelementptr' 'layer11_out_12_addr' <Predicate = (!icmp_ln209)> <Delay = 0.00>
+ST_3 : Operation 58 [2/2] (0.62ns)   --->   "%layer11_out_12_load = load i7* %layer11_out_12_addr, align 1" [example.cpp:210]   --->   Operation 58 'load' 'layer11_out_12_load' <Predicate = (!icmp_ln209)> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "br label %"edgeblock<ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, ap_uint<14>, ap_fixed<14, 7, 5, 3, 0>, ap_fixed<14, 7, 5, 3, 0>, 1, 11ul, 13ul, 60ul, 120ul, 3ul, 4ul, 1ul, true, true>.exit""   --->   Operation 59 'br' <Predicate = (icmp_ln209)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 1.21>
+ST_4 : Operation 60 [1/2] (0.62ns)   --->   "%layer11_out_0_load = load i7* %layer11_out_0_addr, align 1" [example.cpp:210]   --->   Operation 60 'load' 'layer11_out_0_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 61 [1/1] (0.00ns)   --->   "%zext_ln176 = zext i7 %layer11_out_0_load to i14" [example.cpp:210]   --->   Operation 61 'zext' 'zext_ln176' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 62 [1/2] (0.62ns)   --->   "%layer11_out_1_load = load i7* %layer11_out_1_addr, align 1" [example.cpp:210]   --->   Operation 62 'load' 'layer11_out_1_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%zext_ln176_1 = zext i7 %layer11_out_1_load to i14" [example.cpp:210]   --->   Operation 63 'zext' 'zext_ln176_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 64 [1/2] (0.62ns)   --->   "%layer11_out_2_load = load i7* %layer11_out_2_addr, align 1" [example.cpp:210]   --->   Operation 64 'load' 'layer11_out_2_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%zext_ln176_2 = zext i7 %layer11_out_2_load to i14" [example.cpp:210]   --->   Operation 65 'zext' 'zext_ln176_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 66 [1/2] (0.62ns)   --->   "%layer11_out_3_load = load i7* %layer11_out_3_addr, align 1" [example.cpp:210]   --->   Operation 66 'load' 'layer11_out_3_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 67 [1/1] (0.00ns)   --->   "%zext_ln176_3 = zext i7 %layer11_out_3_load to i14" [example.cpp:210]   --->   Operation 67 'zext' 'zext_ln176_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 68 [1/2] (0.62ns)   --->   "%layer11_out_4_load = load i7* %layer11_out_4_addr, align 1" [example.cpp:210]   --->   Operation 68 'load' 'layer11_out_4_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 69 [1/1] (0.00ns)   --->   "%zext_ln176_4 = zext i7 %layer11_out_4_load to i14" [example.cpp:210]   --->   Operation 69 'zext' 'zext_ln176_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 70 [1/2] (0.62ns)   --->   "%layer11_out_5_load = load i7* %layer11_out_5_addr, align 1" [example.cpp:210]   --->   Operation 70 'load' 'layer11_out_5_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 71 [1/1] (0.00ns)   --->   "%zext_ln176_5 = zext i7 %layer11_out_5_load to i14" [example.cpp:210]   --->   Operation 71 'zext' 'zext_ln176_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 72 [1/2] (0.62ns)   --->   "%layer11_out_6_load = load i7* %layer11_out_6_addr, align 1" [example.cpp:210]   --->   Operation 72 'load' 'layer11_out_6_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 73 [1/1] (0.00ns)   --->   "%zext_ln176_6 = zext i7 %layer11_out_6_load to i14" [example.cpp:210]   --->   Operation 73 'zext' 'zext_ln176_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 74 [1/2] (0.62ns)   --->   "%layer11_out_7_load = load i7* %layer11_out_7_addr, align 1" [example.cpp:210]   --->   Operation 74 'load' 'layer11_out_7_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%zext_ln176_7 = zext i7 %layer11_out_7_load to i14" [example.cpp:210]   --->   Operation 75 'zext' 'zext_ln176_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 76 [1/2] (0.62ns)   --->   "%layer11_out_8_load = load i7* %layer11_out_8_addr, align 1" [example.cpp:210]   --->   Operation 76 'load' 'layer11_out_8_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 77 [1/1] (0.00ns)   --->   "%zext_ln176_8 = zext i7 %layer11_out_8_load to i14" [example.cpp:210]   --->   Operation 77 'zext' 'zext_ln176_8' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 78 [1/2] (0.62ns)   --->   "%layer11_out_9_load = load i7* %layer11_out_9_addr, align 1" [example.cpp:210]   --->   Operation 78 'load' 'layer11_out_9_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 79 [1/1] (0.00ns)   --->   "%zext_ln176_9 = zext i7 %layer11_out_9_load to i14" [example.cpp:210]   --->   Operation 79 'zext' 'zext_ln176_9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 80 [1/2] (0.62ns)   --->   "%layer11_out_10_load = load i7* %layer11_out_10_addr, align 1" [example.cpp:210]   --->   Operation 80 'load' 'layer11_out_10_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 81 [1/1] (0.00ns)   --->   "%zext_ln176_10 = zext i7 %layer11_out_10_load to i14" [example.cpp:210]   --->   Operation 81 'zext' 'zext_ln176_10' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 82 [1/2] (0.62ns)   --->   "%layer11_out_11_load = load i7* %layer11_out_11_addr, align 1" [example.cpp:210]   --->   Operation 82 'load' 'layer11_out_11_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln176_11 = zext i7 %layer11_out_11_load to i14" [example.cpp:210]   --->   Operation 83 'zext' 'zext_ln176_11' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 84 [1/2] (0.62ns)   --->   "%layer11_out_12_load = load i7* %layer11_out_12_addr, align 1" [example.cpp:210]   --->   Operation 84 'load' 'layer11_out_12_load' <Predicate = true> <Delay = 0.62> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.62> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 7> <Depth = 120> <RAM>
+ST_4 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln176_12 = zext i7 %layer11_out_12_load to i14" [example.cpp:210]   --->   Operation 85 'zext' 'zext_ln176_12' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 86 [1/1] (0.58ns)   --->   "%tmp_V = call i14 @_ssdm_op_Mux.ap_auto.13i14.i4(i14 %zext_ln176, i14 %zext_ln176_1, i14 %zext_ln176_2, i14 %zext_ln176_3, i14 %zext_ln176_4, i14 %zext_ln176_5, i14 %zext_ln176_6, i14 %zext_ln176_7, i14 %zext_ln176_8, i14 %zext_ln176_9, i14 %zext_ln176_10, i14 %zext_ln176_11, i14 %zext_ln176_12, i4 %j68_0)" [example.cpp:210]   --->   Operation 86 'mux' 'tmp_V' <Predicate = true> <Delay = 0.58> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 0.58> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 87 [1/1] (0.63ns)   --->   "switch i4 %j68_0, label %branch12115 [
+    i4 0, label %branch0103
+    i4 1, label %branch1104
+    i4 2, label %branch2105
+    i4 3, label %branch3106
+    i4 4, label %branch4107
+    i4 5, label %branch5108
+    i4 6, label %branch6109
+    i4 7, label %branch7110
+    i4 -8, label %branch8111
+    i4 -7, label %branch9112
+    i4 -6, label %branch10113
+    i4 -5, label %branch11114
+  ]" [example.cpp:210]   --->   Operation 87 'switch' <Predicate = true> <Delay = 0.63>
+ST_4 : Operation 88 [1/1] (0.00ns)   --->   "%sext_ln177_12 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 88 'sext' 'sext_ln177_12' <Predicate = (j68_0 == 11)> <Delay = 0.00>
+ST_4 : Operation 89 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_11_V_V, i16 %sext_ln177_12)" [example.cpp:210]   --->   Operation 89 'write' <Predicate = (j68_0 == 11)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 90 [1/1] (0.00ns)   --->   "%sext_ln177_11 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 90 'sext' 'sext_ln177_11' <Predicate = (j68_0 == 10)> <Delay = 0.00>
+ST_4 : Operation 91 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_10_V_V, i16 %sext_ln177_11)" [example.cpp:210]   --->   Operation 91 'write' <Predicate = (j68_0 == 10)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 92 [1/1] (0.00ns)   --->   "%sext_ln177_10 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 92 'sext' 'sext_ln177_10' <Predicate = (j68_0 == 9)> <Delay = 0.00>
+ST_4 : Operation 93 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_9_V_V, i16 %sext_ln177_10)" [example.cpp:210]   --->   Operation 93 'write' <Predicate = (j68_0 == 9)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 94 [1/1] (0.00ns)   --->   "%sext_ln177_9 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 94 'sext' 'sext_ln177_9' <Predicate = (j68_0 == 8)> <Delay = 0.00>
+ST_4 : Operation 95 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_8_V_V, i16 %sext_ln177_9)" [example.cpp:210]   --->   Operation 95 'write' <Predicate = (j68_0 == 8)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 96 [1/1] (0.00ns)   --->   "%sext_ln177_8 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 96 'sext' 'sext_ln177_8' <Predicate = (j68_0 == 7)> <Delay = 0.00>
+ST_4 : Operation 97 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_7_V_V, i16 %sext_ln177_8)" [example.cpp:210]   --->   Operation 97 'write' <Predicate = (j68_0 == 7)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 98 [1/1] (0.00ns)   --->   "%sext_ln177_7 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 98 'sext' 'sext_ln177_7' <Predicate = (j68_0 == 6)> <Delay = 0.00>
+ST_4 : Operation 99 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_6_V_V, i16 %sext_ln177_7)" [example.cpp:210]   --->   Operation 99 'write' <Predicate = (j68_0 == 6)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 100 [1/1] (0.00ns)   --->   "%sext_ln177_6 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 100 'sext' 'sext_ln177_6' <Predicate = (j68_0 == 5)> <Delay = 0.00>
+ST_4 : Operation 101 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_5_V_V, i16 %sext_ln177_6)" [example.cpp:210]   --->   Operation 101 'write' <Predicate = (j68_0 == 5)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 102 [1/1] (0.00ns)   --->   "%sext_ln177_5 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 102 'sext' 'sext_ln177_5' <Predicate = (j68_0 == 4)> <Delay = 0.00>
+ST_4 : Operation 103 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_4_V_V, i16 %sext_ln177_5)" [example.cpp:210]   --->   Operation 103 'write' <Predicate = (j68_0 == 4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "%sext_ln177_4 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 104 'sext' 'sext_ln177_4' <Predicate = (j68_0 == 3)> <Delay = 0.00>
+ST_4 : Operation 105 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_3_V_V, i16 %sext_ln177_4)" [example.cpp:210]   --->   Operation 105 'write' <Predicate = (j68_0 == 3)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 106 [1/1] (0.00ns)   --->   "%sext_ln177_3 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 106 'sext' 'sext_ln177_3' <Predicate = (j68_0 == 2)> <Delay = 0.00>
+ST_4 : Operation 107 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_2_V_V, i16 %sext_ln177_3)" [example.cpp:210]   --->   Operation 107 'write' <Predicate = (j68_0 == 2)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 108 [1/1] (0.00ns)   --->   "%sext_ln177_2 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 108 'sext' 'sext_ln177_2' <Predicate = (j68_0 == 1)> <Delay = 0.00>
+ST_4 : Operation 109 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_1_V_V, i16 %sext_ln177_2)" [example.cpp:210]   --->   Operation 109 'write' <Predicate = (j68_0 == 1)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 110 [1/1] (0.00ns)   --->   "%sext_ln177_1 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 110 'sext' 'sext_ln177_1' <Predicate = (j68_0 == 0)> <Delay = 0.00>
+ST_4 : Operation 111 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_0_V_V, i16 %sext_ln177_1)" [example.cpp:210]   --->   Operation 111 'write' <Predicate = (j68_0 == 0)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 112 [1/1] (0.00ns)   --->   "%sext_ln177 = sext i14 %tmp_V to i16" [example.cpp:210]   --->   Operation 112 'sext' 'sext_ln177' <Predicate = (j68_0 == 15) | (j68_0 == 14) | (j68_0 == 13) | (j68_0 == 12)> <Delay = 0.00>
+ST_4 : Operation 113 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_12_V_V, i16 %sext_ln177)" [example.cpp:210]   --->   Operation 113 'write' <Predicate = (j68_0 == 15) | (j68_0 == 14) | (j68_0 == 13) | (j68_0 == 12)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 114 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_11_V_V, i16 %sext_ln177_12)" [example.cpp:210]   --->   Operation 114 'write' <Predicate = (j68_0 == 11)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 115 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 115 'br' <Predicate = (j68_0 == 11)> <Delay = 0.00>
+ST_5 : Operation 116 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_10_V_V, i16 %sext_ln177_11)" [example.cpp:210]   --->   Operation 116 'write' <Predicate = (j68_0 == 10)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 117 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 117 'br' <Predicate = (j68_0 == 10)> <Delay = 0.00>
+ST_5 : Operation 118 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_9_V_V, i16 %sext_ln177_10)" [example.cpp:210]   --->   Operation 118 'write' <Predicate = (j68_0 == 9)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 119 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 119 'br' <Predicate = (j68_0 == 9)> <Delay = 0.00>
+ST_5 : Operation 120 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_8_V_V, i16 %sext_ln177_9)" [example.cpp:210]   --->   Operation 120 'write' <Predicate = (j68_0 == 8)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 121 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 121 'br' <Predicate = (j68_0 == 8)> <Delay = 0.00>
+ST_5 : Operation 122 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_7_V_V, i16 %sext_ln177_8)" [example.cpp:210]   --->   Operation 122 'write' <Predicate = (j68_0 == 7)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 123 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 123 'br' <Predicate = (j68_0 == 7)> <Delay = 0.00>
+ST_5 : Operation 124 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_6_V_V, i16 %sext_ln177_7)" [example.cpp:210]   --->   Operation 124 'write' <Predicate = (j68_0 == 6)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 125 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 125 'br' <Predicate = (j68_0 == 6)> <Delay = 0.00>
+ST_5 : Operation 126 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_5_V_V, i16 %sext_ln177_6)" [example.cpp:210]   --->   Operation 126 'write' <Predicate = (j68_0 == 5)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 127 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 127 'br' <Predicate = (j68_0 == 5)> <Delay = 0.00>
+ST_5 : Operation 128 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_4_V_V, i16 %sext_ln177_5)" [example.cpp:210]   --->   Operation 128 'write' <Predicate = (j68_0 == 4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 129 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 129 'br' <Predicate = (j68_0 == 4)> <Delay = 0.00>
+ST_5 : Operation 130 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_3_V_V, i16 %sext_ln177_4)" [example.cpp:210]   --->   Operation 130 'write' <Predicate = (j68_0 == 3)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 131 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 131 'br' <Predicate = (j68_0 == 3)> <Delay = 0.00>
+ST_5 : Operation 132 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_2_V_V, i16 %sext_ln177_3)" [example.cpp:210]   --->   Operation 132 'write' <Predicate = (j68_0 == 2)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 133 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 133 'br' <Predicate = (j68_0 == 2)> <Delay = 0.00>
+ST_5 : Operation 134 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_1_V_V, i16 %sext_ln177_2)" [example.cpp:210]   --->   Operation 134 'write' <Predicate = (j68_0 == 1)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 135 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 135 'br' <Predicate = (j68_0 == 1)> <Delay = 0.00>
+ST_5 : Operation 136 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_0_V_V, i16 %sext_ln177_1)" [example.cpp:210]   --->   Operation 136 'write' <Predicate = (j68_0 == 0)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 137 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 137 'br' <Predicate = (j68_0 == 0)> <Delay = 0.00>
+ST_5 : Operation 138 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P(i16* %layer11_out_s_12_V_V, i16 %sext_ln177)" [example.cpp:210]   --->   Operation 138 'write' <Predicate = (j68_0 == 15) | (j68_0 == 14) | (j68_0 == 13) | (j68_0 == 12)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 139 [1/1] (0.00ns)   --->   "br label %0" [example.cpp:210]   --->   Operation 139 'br' <Predicate = (j68_0 == 15) | (j68_0 == 14) | (j68_0 == 13) | (j68_0 == 12)> <Delay = 0.00>
+ST_5 : Operation 140 [1/1] (0.00ns)   --->   "br label %.preheader" [example.cpp:209]   --->   Operation 140 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 0.603ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('j') with incoming values : ('j', example.cpp:207) [42]  (0.603 ns)
+
+ <State 2>: 0.656ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', example.cpp:207) [42]  (0 ns)
+	'icmp' operation ('icmp_ln207', example.cpp:207) [43]  (0.656 ns)
+
+ <State 3>: 0.626ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', example.cpp:209) [50]  (0 ns)
+	'getelementptr' operation ('layer11_out_0_addr', example.cpp:210) [57]  (0 ns)
+	'load' operation ('layer11_out_0_load', example.cpp:210) on array 'layer11_out_0' [58]  (0.626 ns)
+
+ <State 4>: 1.21ns
+The critical path consists of the following:
+	'load' operation ('layer11_out_0_load', example.cpp:210) on array 'layer11_out_0' [58]  (0.626 ns)
+	'mux' operation ('tmp.V', example.cpp:210) [96]  (0.587 ns)
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

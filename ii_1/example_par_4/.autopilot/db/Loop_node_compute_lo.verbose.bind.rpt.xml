@@ -1,0 +1,57 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'Loop_node_compute_lo'" level="0">
+<item name = "Date">Fri Aug 19 15:50:39 2022
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">ii_1</item>
+<item name = "Solution">example_par_4</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu9p-flga2104-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.221 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">71, 71, 0.355 us, 0.355 us, 71, 71, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_dense_mult_3lyr_fu_1633">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1648">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1659">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1670">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1681">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1692">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1703">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1714">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1725">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1736">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+<column name="grp_dense_mult_3lyr_fu_1747">dense_mult_3lyr, 6, 6, 30.000 ns, 30.000 ns, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- node_compute_loop">69, 69, 11, 1, 1, 60, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

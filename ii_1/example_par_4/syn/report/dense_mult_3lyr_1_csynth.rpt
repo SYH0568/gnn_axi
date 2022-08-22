@@ -1,0 +1,184 @@
+
+
+================================================================
+== Vivado HLS Report for 'dense_mult_3lyr_1'
+================================================================
+* Date:           Fri Aug 19 15:52:24 2022
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        ii_1
+* Solution:       example_par_4
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 3.804 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        7|        7| 35.000 ns | 35.000 ns |    1|    1| function |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+----------+
+        |                                 |                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |             Instance            |        Module        |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+----------+
+        |grp_dense_resource_1_0_1_fu_90   |dense_resource_1_0_1  |        1|        1| 5.000 ns | 5.000 ns |    1|    1| function |
+        |grp_dense_resource_2_0_fu_114    |dense_resource_2_0    |        1|        1| 5.000 ns | 5.000 ns |    1|    1| function |
+        |grp_dense_resource_0_0_1_fu_126  |dense_resource_0_0_1  |        1|        1| 5.000 ns | 5.000 ns |    1|    1| function |
+        |call_ret6_relu_fu_138            |relu                  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        |call_ret_relu_fu_150             |relu                  |        0|        0|   0 ns   |   0 ns   |    1|    1| function |
+        +---------------------------------+----------------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++---------------------+---------+-------+---------+---------+-----+
+|DSP                  |        -|      -|        -|        -|    -|
+|Expression           |        -|      -|        -|        -|    -|
+|FIFO                 |        -|      -|        -|        -|    -|
+|Instance             |        -|     87|     1027|     5002|    -|
+|Memory               |        -|      -|        -|        -|    -|
+|Multiplexer          |        -|      -|        -|        -|    -|
+|Register             |        -|      -|      588|        -|    -|
++---------------------+---------+-------+---------+---------+-----+
+|Total                |        0|     87|     1615|     5002|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available SLR        |     1440|   2280|   788160|   394080|  320|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization SLR (%)  |        0|      3|    ~0   |        1|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available            |     4320|   6840|  2364480|  1182240|  960|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization (%)      |        0|      1|    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------+----------------------+---------+-------+-----+------+-----+
+    |             Instance            |        Module        | BRAM_18K| DSP48E|  FF |  LUT | URAM|
+    +---------------------------------+----------------------+---------+-------+-----+------+-----+
+    |grp_dense_resource_0_0_1_fu_126  |dense_resource_0_0_1  |        0|     17|  204|   747|    0|
+    |grp_dense_resource_1_0_1_fu_90   |dense_resource_1_0_1  |        0|     43|  455|  2026|    0|
+    |grp_dense_resource_2_0_fu_114    |dense_resource_2_0    |        0|     27|  368|  1813|    0|
+    |call_ret6_relu_fu_138            |relu                  |        0|      0|    0|   208|    0|
+    |call_ret_relu_fu_150             |relu                  |        0|      0|    0|   208|    0|
+    +---------------------------------+----------------------+---------+-------+-----+------+-----+
+    |Total                            |                      |        0|     87| 1027|  5002|    0|
+    +---------------------------------+----------------------+---------+-------+-----+------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +--------------------------+----+----+-----+-----------+
+    |           Name           | FF | LUT| Bits| Const Bits|
+    +--------------------------+----+----+-----+-----------+
+    |data0_0_V_reg_330         |  14|   0|   14|          0|
+    |data0_1_V_reg_335         |  14|   0|   14|          0|
+    |data0_2_V_reg_340         |  14|   0|   14|          0|
+    |data0_3_V_reg_345         |  14|   0|   14|          0|
+    |data0_4_V_reg_350         |  14|   0|   14|          0|
+    |data0_5_V_reg_355         |  14|   0|   14|          0|
+    |data0_6_V_reg_360         |  14|   0|   14|          0|
+    |data0_7_V_reg_365         |  14|   0|   14|          0|
+    |data0_logits_0_V_reg_290  |  14|   0|   14|          0|
+    |data0_logits_1_V_reg_295  |  14|   0|   14|          0|
+    |data0_logits_2_V_reg_300  |  14|   0|   14|          0|
+    |data0_logits_3_V_reg_305  |  14|   0|   14|          0|
+    |data0_logits_4_V_reg_310  |  14|   0|   14|          0|
+    |data0_logits_5_V_reg_315  |  14|   0|   14|          0|
+    |data0_logits_6_V_reg_320  |  14|   0|   14|          0|
+    |data0_logits_7_V_reg_325  |  14|   0|   14|          0|
+    |data1_0_V_reg_410         |  14|   0|   14|          0|
+    |data1_1_V_reg_415         |  14|   0|   14|          0|
+    |data1_2_V_reg_420         |  14|   0|   14|          0|
+    |data1_3_V_reg_425         |  14|   0|   14|          0|
+    |data1_4_V_reg_430         |  14|   0|   14|          0|
+    |data1_5_V_reg_435         |  14|   0|   14|          0|
+    |data1_6_V_reg_440         |  14|   0|   14|          0|
+    |data1_7_V_reg_445         |  14|   0|   14|          0|
+    |data1_logits_0_V_reg_370  |  14|   0|   14|          0|
+    |data1_logits_1_V_reg_375  |  14|   0|   14|          0|
+    |data1_logits_2_V_reg_380  |  14|   0|   14|          0|
+    |data1_logits_3_V_reg_385  |  14|   0|   14|          0|
+    |data1_logits_4_V_reg_390  |  14|   0|   14|          0|
+    |data1_logits_5_V_reg_395  |  14|   0|   14|          0|
+    |data1_logits_6_V_reg_400  |  14|   0|   14|          0|
+    |data1_logits_7_V_reg_405  |  14|   0|   14|          0|
+    |data_0_V_read_int_reg     |  14|   0|   14|          0|
+    |data_1_V_read_int_reg     |  14|   0|   14|          0|
+    |data_2_V_read_int_reg     |  14|   0|   14|          0|
+    |data_3_V_read_int_reg     |  14|   0|   14|          0|
+    |data_4_V_read_int_reg     |  14|   0|   14|          0|
+    |data_5_V_read_int_reg     |  14|   0|   14|          0|
+    |data_6_V_read_int_reg     |  14|   0|   14|          0|
+    |data_7_V_read_int_reg     |  14|   0|   14|          0|
+    |data_8_V_read_int_reg     |  14|   0|   14|          0|
+    |data_9_V_read_int_reg     |  14|   0|   14|          0|
+    +--------------------------+----+----+-----+-----------+
+    |Total                     | 588|   0|  588|          0|
+    +--------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+------------+-------------------+--------------+
+|   RTL Ports   | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++---------------+-----+-----+------------+-------------------+--------------+
+|ap_clk         |  in |    1| ap_ctrl_hs | dense_mult_3lyr.1 | return value |
+|ap_rst         |  in |    1| ap_ctrl_hs | dense_mult_3lyr.1 | return value |
+|ap_return_0    | out |   14| ap_ctrl_hs | dense_mult_3lyr.1 | return value |
+|ap_return_1    | out |   14| ap_ctrl_hs | dense_mult_3lyr.1 | return value |
+|ap_return_2    | out |   14| ap_ctrl_hs | dense_mult_3lyr.1 | return value |
+|ap_return_3    | out |   14| ap_ctrl_hs | dense_mult_3lyr.1 | return value |
+|data_0_V_read  |  in |   14|   ap_none  |   data_0_V_read   |    scalar    |
+|data_1_V_read  |  in |   14|   ap_none  |   data_1_V_read   |    scalar    |
+|data_2_V_read  |  in |   14|   ap_none  |   data_2_V_read   |    scalar    |
+|data_3_V_read  |  in |   14|   ap_none  |   data_3_V_read   |    scalar    |
+|data_4_V_read  |  in |   14|   ap_none  |   data_4_V_read   |    scalar    |
+|data_5_V_read  |  in |   14|   ap_none  |   data_5_V_read   |    scalar    |
+|data_6_V_read  |  in |   14|   ap_none  |   data_6_V_read   |    scalar    |
+|data_7_V_read  |  in |   14|   ap_none  |   data_7_V_read   |    scalar    |
+|data_8_V_read  |  in |   14|   ap_none  |   data_8_V_read   |    scalar    |
+|data_9_V_read  |  in |   14|   ap_none  |   data_9_V_read   |    scalar    |
++---------------+-----+-----+------------+-------------------+--------------+
+

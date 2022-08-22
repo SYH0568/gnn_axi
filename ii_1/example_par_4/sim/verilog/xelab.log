@@ -1,0 +1,632 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/opt/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_example_top glbl -prj example.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile /opt/Xilinx/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s example 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_example_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_0_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_0_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_0_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_0_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_0_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_0_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_1_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_1_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_1_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_1_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_1_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_1_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_2_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_2_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_2_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_2_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_2_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_2_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_3_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_3_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_3_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_3_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_3_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_3_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_4_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_4_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_4_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_4_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_4_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_4_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_5_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_5_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_5_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_5_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_5_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_5_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_6_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_6_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_6_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_6_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_6_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_6_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_7_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_7_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_7_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_7_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_7_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_7_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_8_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_8_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_8_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_8_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_8_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_8_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_9_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_9_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_9_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_9_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_9_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_9_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_10_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_10_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_10_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_10_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_node_attr_10_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_node_attr_10_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_0_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_0_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_0_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_0_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_0_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_0_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_0_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_0_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_1_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_1_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_1_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_1_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_1_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_1_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_1_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_1_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_2_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_2_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_2_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_2_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_2_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_2_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_2_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_2_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_3_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_3_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_3_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_3_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_3_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_3_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_3_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_3_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_4_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_4_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_4_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_4_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_4_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_4_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_4_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_4_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_5_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_5_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_5_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_5_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_5_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_5_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_5_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_5_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_6_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_6_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_6_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_6_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_6_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_6_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_6_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_6_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_7_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_7_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_7_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_7_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_7_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_7_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_7_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_7_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_8_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_8_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_8_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_8_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_8_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_8_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_8_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_8_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_9_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_9_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_9_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_9_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_9_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_9_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_9_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_9_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_10_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_10_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_10_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_10_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_10_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_10_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_10_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_10_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_11_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_11_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_11_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_11_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_11_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_11_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_11_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_11_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_12_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_12_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_12_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_12_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_12_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_12_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_attr_12_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_attr_12_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_0_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_0_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_0_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_0_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_1_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_1_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_1_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_1_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_2_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_2_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_2_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_2_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_3_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_3_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_3_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_3_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_4_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_4_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_4_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_4_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_5_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_5_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_5_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_5_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_6_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_6_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_6_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_6_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_7_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_7_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_7_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_7_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_8_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_8_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_8_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_8_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_9_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_9_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_9_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_9_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_10_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_10_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_10_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_10_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_11_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_11_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_11_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_11_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_12_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_12_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_edge_index_12_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_edge_index_12_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_0_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_0_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_1_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_1_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_2_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_2_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_3_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_3_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_4_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_4_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_5_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_5_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_6_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_6_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_7_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_7_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_8_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_8_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_9_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_9_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_10_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_10_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_11_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_11_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_automem_layer11_out_12_V.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_layer11_out_12_V
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Block_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Block_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/clone_vector_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clone_vector_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/clone_vector_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clone_vector_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/clone_vector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clone_vector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Loop_edge_choose_ver_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_edge_choose_ver_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_resource_1_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_resource_1_0_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/relu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module relu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_resource_2_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_resource_2_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_resource_0_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_resource_0_0_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_mult_3lyr_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_mult_3lyr_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Loop_edge_compute_lo_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_edge_compute_lo_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/clone_vector_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clone_vector_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Loop_fetch_loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_fetch_loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Loop_out_loop_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_out_loop_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_resource_0_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_resource_0_0_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_resource_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_resource_1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_mult_3lyr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_mult_3lyr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Loop_node_compute_lo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_node_compute_lo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Loop_edge_choose_ver.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_edge_choose_ver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_resource_0_0_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_resource_0_0_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_resource_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_resource_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/dense_mult_3lyr_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dense_mult_3lyr_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/sigmoid.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/Loop_edge_compute_lo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Loop_edge_compute_lo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_9bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_9bkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module example_mul_mul_9bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_8cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_8cud_DSP48_1
+INFO: [VRFC 10-311] analyzing module example_mul_mul_8cud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1dEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1dEe_DSP48_2
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1dEe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_6eOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_6eOg_DSP48_3
+INFO: [VRFC 10-311] analyzing module example_mul_mul_6eOg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1fYi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1fYi_DSP48_4
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1fYi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_7g8j.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_7g8j_DSP48_5
+INFO: [VRFC 10-311] analyzing module example_mul_mul_7g8j
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_8hbi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_8hbi_DSP48_6
+INFO: [VRFC 10-311] analyzing module example_mul_mul_8hbi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_7ibs.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_7ibs_DSP48_7
+INFO: [VRFC 10-311] analyzing module example_mul_mul_7ibs
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_6jbC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_6jbC_DSP48_8
+INFO: [VRFC 10-311] analyzing module example_mul_mul_6jbC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_9kbM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_9kbM_DSP48_9
+INFO: [VRFC 10-311] analyzing module example_mul_mul_9kbM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1lbW.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1lbW_DSP48_10
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1lbW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1mb6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1mb6_DSP48_11
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1mb6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1ncg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1ncg_DSP48_12
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1ncg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1ocq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1ocq_DSP48_13
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1ocq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1pcA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1pcA_DSP48_14
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1pcA
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1qcK.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1qcK_DSP48_15
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1qcK
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1rcU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1rcU_DSP48_16
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1rcU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1sc4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1sc4_DSP48_17
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1sc4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1tde.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1tde_DSP48_18
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1tde
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1udo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1udo_DSP48_19
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1udo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1vdy.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1vdy_DSP48_20
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1vdy
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_mul_mul_1wdI.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1wdI_DSP48_21
+INFO: [VRFC 10-311] analyzing module example_mul_mul_1wdI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/sigmoid_sigmoid_txdS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigmoid_sigmoid_txdS_rom
+INFO: [VRFC 10-311] analyzing module sigmoid_sigmoid_txdS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_node_attryd2_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_node_attryd2_memcore_ram
+INFO: [VRFC 10-311] analyzing module example_node_attryd2_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_node_attryd2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_node_attryd2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_node_attrgXb_x_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_node_attrgXb_x_memcore_ram
+INFO: [VRFC 10-311] analyzing module example_node_attrgXb_x_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_node_attrgXb_x.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_node_attrgXb_x
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_edge_indehub_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_edge_indehub_memcore_ram
+INFO: [VRFC 10-311] analyzing module example_edge_indehub_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_edge_indehub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_edge_indehub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_edge_indeikb_memcore.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_edge_indeikb_memcore_ram
+INFO: [VRFC 10-311] analyzing module example_edge_indeikb_memcore
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/axi/ii_1/example_par_4/sim/verilog/example_edge_indeikb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module example_edge_indeikb
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.example_node_attryd2_memcore_ram
+Compiling module xil_defaultlib.example_node_attryd2_memcore
+Compiling module xil_defaultlib.example_node_attryd2(AddressRang...
+Compiling module xil_defaultlib.example_node_attrgXb_x_memcore_r...
+Compiling module xil_defaultlib.example_node_attrgXb_x_memcore
+Compiling module xil_defaultlib.example_node_attrgXb_x(AddressRa...
+Compiling module xil_defaultlib.example_edge_indehub_memcore_ram
+Compiling module xil_defaultlib.example_edge_indehub_memcore
+Compiling module xil_defaultlib.example_edge_indehub(AddressRang...
+Compiling module xil_defaultlib.example_edge_indeikb_memcore_ram
+Compiling module xil_defaultlib.example_edge_indeikb_memcore
+Compiling module xil_defaultlib.example_edge_indeikb(AddressRang...
+Compiling module xil_defaultlib.Block_proc
+Compiling module xil_defaultlib.clone_vector_3
+Compiling module xil_defaultlib.clone_vector_1
+Compiling module xil_defaultlib.clone_vector
+Compiling module xil_defaultlib.Loop_edge_choose_ver_1
+Compiling module xil_defaultlib.example_mul_mul_9bkb_DSP48_0
+Compiling module xil_defaultlib.example_mul_mul_9bkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_8cud_DSP48_1
+Compiling module xil_defaultlib.example_mul_mul_8cud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1dEe_DSP48_2
+Compiling module xil_defaultlib.example_mul_mul_1dEe(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_6eOg_DSP48_3
+Compiling module xil_defaultlib.example_mul_mul_6eOg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1fYi_DSP48_4
+Compiling module xil_defaultlib.example_mul_mul_1fYi(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_7g8j_DSP48_5
+Compiling module xil_defaultlib.example_mul_mul_7g8j(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_8hbi_DSP48_6
+Compiling module xil_defaultlib.example_mul_mul_8hbi(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_7ibs_DSP48_7
+Compiling module xil_defaultlib.example_mul_mul_7ibs(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_6jbC_DSP48_8
+Compiling module xil_defaultlib.example_mul_mul_6jbC(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_9kbM_DSP48_9
+Compiling module xil_defaultlib.example_mul_mul_9kbM(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1lbW_DSP48_10
+Compiling module xil_defaultlib.example_mul_mul_1lbW(ID=1,NUM_ST...
+Compiling module xil_defaultlib.dense_resource_1_0_1
+Compiling module xil_defaultlib.example_mul_mul_1mb6_DSP48_11
+Compiling module xil_defaultlib.example_mul_mul_1mb6(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1ncg_DSP48_12
+Compiling module xil_defaultlib.example_mul_mul_1ncg(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1ocq_DSP48_13
+Compiling module xil_defaultlib.example_mul_mul_1ocq(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1pcA_DSP48_14
+Compiling module xil_defaultlib.example_mul_mul_1pcA(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1qcK_DSP48_15
+Compiling module xil_defaultlib.example_mul_mul_1qcK(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1rcU_DSP48_16
+Compiling module xil_defaultlib.example_mul_mul_1rcU(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1sc4_DSP48_17
+Compiling module xil_defaultlib.example_mul_mul_1sc4(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1tde_DSP48_18
+Compiling module xil_defaultlib.example_mul_mul_1tde(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1udo_DSP48_19
+Compiling module xil_defaultlib.example_mul_mul_1udo(ID=1,NUM_ST...
+Compiling module xil_defaultlib.dense_resource_2_0
+Compiling module xil_defaultlib.example_mul_mul_1vdy_DSP48_20
+Compiling module xil_defaultlib.example_mul_mul_1vdy(ID=1,NUM_ST...
+Compiling module xil_defaultlib.example_mul_mul_1wdI_DSP48_21
+Compiling module xil_defaultlib.example_mul_mul_1wdI(ID=1,NUM_ST...
+Compiling module xil_defaultlib.dense_resource_0_0_1
+Compiling module xil_defaultlib.relu
+Compiling module xil_defaultlib.dense_mult_3lyr_1
+Compiling module xil_defaultlib.Loop_edge_compute_lo_1
+Compiling module xil_defaultlib.clone_vector_2
+Compiling module xil_defaultlib.Loop_fetch_loop_proc
+Compiling module xil_defaultlib.Loop_out_loop_proc
+Compiling module xil_defaultlib.dense_resource_1_0
+Compiling module xil_defaultlib.dense_resource_0_0_2
+Compiling module xil_defaultlib.dense_mult_3lyr
+Compiling module xil_defaultlib.Loop_node_compute_lo
+Compiling module xil_defaultlib.Loop_edge_choose_ver
+Compiling module xil_defaultlib.dense_resource_0_0_3
+Compiling module xil_defaultlib.dense_resource_0_0
+Compiling module xil_defaultlib.dense_mult_3lyr_2
+Compiling module xil_defaultlib.sigmoid_sigmoid_txdS_rom
+Compiling module xil_defaultlib.sigmoid_sigmoid_txdS(DataWidth=1...
+Compiling module xil_defaultlib.sigmoid
+Compiling module xil_defaultlib.Loop_edge_compute_lo
+Compiling module xil_defaultlib.example
+Compiling module xil_defaultlib.AESL_automem_node_attr_0_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_0_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_0_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_1_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_1_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_1_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_2_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_2_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_2_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_3_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_3_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_3_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_4_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_4_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_4_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_5_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_5_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_5_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_6_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_6_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_6_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_7_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_7_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_7_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_8_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_8_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_8_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_9_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_9_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_9_2_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_10_0_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_10_1_V
+Compiling module xil_defaultlib.AESL_automem_node_attr_10_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_0_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_0_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_0_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_0_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_1_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_1_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_1_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_1_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_2_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_2_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_2_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_2_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_3_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_3_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_3_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_3_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_4_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_4_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_4_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_4_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_5_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_5_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_5_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_5_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_6_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_6_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_6_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_6_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_7_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_7_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_7_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_7_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_8_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_8_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_8_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_8_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_9_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_9_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_9_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_9_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_10_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_10_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_10_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_10_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_11_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_11_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_11_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_11_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_12_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_12_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_12_2_V
+Compiling module xil_defaultlib.AESL_automem_edge_attr_12_3_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_0_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_0_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_1_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_1_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_2_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_2_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_3_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_3_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_4_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_4_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_5_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_5_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_6_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_6_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_7_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_7_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_8_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_8_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_9_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_9_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_10_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_10_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_11_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_11_1_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_12_0_V
+Compiling module xil_defaultlib.AESL_automem_edge_index_12_1_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_0_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_1_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_2_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_3_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_4_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_5_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_6_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_7_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_8_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_9_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_10_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_11_V
+Compiling module xil_defaultlib.AESL_automem_layer11_out_12_V
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.apatb_example_top
+Compiling module work.glbl
+Built simulation snapshot example

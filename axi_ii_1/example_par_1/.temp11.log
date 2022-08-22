@@ -1,0 +1,10 @@
+terminate called after throwing an instance of 'sc_core::sc_report'
+  what():  Error: (E5) out of bounds
+In file: /opt/Xilinx/Vivado/2019.2/lnx64/tools/systemc/include/sysc/datatypes/bit/sc_bit_proxies.h:2487
+load with /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/memory/dataflow_stable_content/test_graph/graph1/input_data.txt 
+load with /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/memory/dataflow_stable_content/test_graph/graph1/target_data.txt 
+terminate called after throwing an instance of 'sc_core::sc_report'
+  what():  Error: (E5) out of bounds
+In file: /opt/Xilinx/Vivado/2019.2/lnx64/tools/systemc/include/sysc/datatypes/bit/sc_bit_proxies.h:2487
+load with /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/memory/dataflow_stable_content/test_graph/graph1/input_data.txt 
+load with /home/ShiYuHuang/manual_GNN_conversion/hls_output_current/add/source_to_target/memory/dataflow_stable_content/test_graph/graph1/target_data.txt 

@@ -1,0 +1,242 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_12_proc228'
+================================================================
+* Date:           Mon Aug 22 13:47:21 2022
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        axi_ii_1
+* Solution:       example_par_1
+* Product family: virtexuplus
+* Target device:  xcvu9p-flga2104-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 0.722 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      123|      123| 0.615 us | 0.615 us |  123|  123|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |      121|      121|         3|          1|          1|   120|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++---------------------+---------+-------+---------+---------+-----+
+|         Name        | BRAM_18K| DSP48E|    FF   |   LUT   | URAM|
++---------------------+---------+-------+---------+---------+-----+
+|DSP                  |        -|      -|        -|        -|    -|
+|Expression           |        -|      -|        0|       32|    -|
+|FIFO                 |        -|      -|        -|        -|    -|
+|Instance             |        -|      -|        -|        -|    -|
+|Memory               |        -|      -|        -|        -|    -|
+|Multiplexer          |        -|      -|        -|      174|    -|
+|Register             |        -|      -|       16|        -|    -|
++---------------------+---------+-------+---------+---------+-----+
+|Total                |        0|      0|       16|      206|    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available SLR        |     1440|   2280|   788160|   394080|  320|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization SLR (%)  |        0|      0|    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+|Available            |     4320|   6840|  2364480|  1182240|  960|
++---------------------+---------+-------+---------+---------+-----+
+|Utilization (%)      |        0|      0|    ~0   |    ~0   |    0|
++---------------------+---------+-------+---------+---------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |i_fu_365_p2                |     +    |      0|  0|   7|           7|           1|
+    |icmp_ln218_fu_359_p2       |   icmp   |      0|  0|  11|           7|           5|
+    |ap_block_pp0_stage0_11001  |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1            |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state3_io         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state4_io         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state5            |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0              |    xor   |      0|  0|   2|           1|           2|
+    |ap_enable_reg_pp0_iter1    |    xor   |      0|  0|   2|           2|           1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |Total                      |          |      0|  0|  32|          22|          14|
+    +---------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                         |  21|          4|    1|          4|
+    |ap_done                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter2           |   9|          2|    1|          2|
+    |i68_0_reg_348                     |   9|          2|    7|         14|
+    |layer11_out_s_0_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_10_V_V_TDATA_blk_n  |   9|          2|    1|          2|
+    |layer11_out_s_11_V_V_TDATA_blk_n  |   9|          2|    1|          2|
+    |layer11_out_s_12_V_V_TDATA_blk_n  |   9|          2|    1|          2|
+    |layer11_out_s_1_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_2_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_3_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_4_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_5_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_6_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_7_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_8_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    |layer11_out_s_9_V_V_TDATA_blk_n   |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 174|         38|   24|         50|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+---+----+-----+-----------+
+    |               Name               | FF| LUT| Bits| Const Bits|
+    +----------------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                         |  3|   0|    3|          0|
+    |ap_done_reg                       |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0           |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |  1|   0|    1|          0|
+    |i68_0_reg_348                     |  7|   0|    7|          0|
+    |icmp_ln218_reg_453                |  1|   0|    1|          0|
+    |icmp_ln218_reg_453_pp0_iter1_reg  |  1|   0|    1|          0|
+    +----------------------------------+---+----+-----+-----------+
+    |Total                             | 16|   0|   16|          0|
+    +----------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                       |  in |    1| ap_ctrl_hs |    Loop_12_proc228   | return value |
+|ap_rst                       |  in |    1| ap_ctrl_hs |    Loop_12_proc228   | return value |
+|ap_start                     |  in |    1| ap_ctrl_hs |    Loop_12_proc228   | return value |
+|ap_done                      | out |    1| ap_ctrl_hs |    Loop_12_proc228   | return value |
+|ap_continue                  |  in |    1| ap_ctrl_hs |    Loop_12_proc228   | return value |
+|ap_idle                      | out |    1| ap_ctrl_hs |    Loop_12_proc228   | return value |
+|ap_ready                     | out |    1| ap_ctrl_hs |    Loop_12_proc228   | return value |
+|layer11_out_0_address0       | out |    7|  ap_memory |     layer11_out_0    |     array    |
+|layer11_out_0_ce0            | out |    1|  ap_memory |     layer11_out_0    |     array    |
+|layer11_out_0_q0             |  in |    7|  ap_memory |     layer11_out_0    |     array    |
+|layer11_out_s_0_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_0_V_V |    pointer   |
+|layer11_out_s_0_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_0_V_V |    pointer   |
+|layer11_out_s_0_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_0_V_V |    pointer   |
+|layer11_out_1_address0       | out |    7|  ap_memory |     layer11_out_1    |     array    |
+|layer11_out_1_ce0            | out |    1|  ap_memory |     layer11_out_1    |     array    |
+|layer11_out_1_q0             |  in |    7|  ap_memory |     layer11_out_1    |     array    |
+|layer11_out_s_1_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_1_V_V |    pointer   |
+|layer11_out_s_1_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_1_V_V |    pointer   |
+|layer11_out_s_1_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_1_V_V |    pointer   |
+|layer11_out_2_address0       | out |    7|  ap_memory |     layer11_out_2    |     array    |
+|layer11_out_2_ce0            | out |    1|  ap_memory |     layer11_out_2    |     array    |
+|layer11_out_2_q0             |  in |    7|  ap_memory |     layer11_out_2    |     array    |
+|layer11_out_s_2_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_2_V_V |    pointer   |
+|layer11_out_s_2_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_2_V_V |    pointer   |
+|layer11_out_s_2_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_2_V_V |    pointer   |
+|layer11_out_3_address0       | out |    7|  ap_memory |     layer11_out_3    |     array    |
+|layer11_out_3_ce0            | out |    1|  ap_memory |     layer11_out_3    |     array    |
+|layer11_out_3_q0             |  in |    7|  ap_memory |     layer11_out_3    |     array    |
+|layer11_out_s_3_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_3_V_V |    pointer   |
+|layer11_out_s_3_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_3_V_V |    pointer   |
+|layer11_out_s_3_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_3_V_V |    pointer   |
+|layer11_out_4_address0       | out |    7|  ap_memory |     layer11_out_4    |     array    |
+|layer11_out_4_ce0            | out |    1|  ap_memory |     layer11_out_4    |     array    |
+|layer11_out_4_q0             |  in |    7|  ap_memory |     layer11_out_4    |     array    |
+|layer11_out_s_4_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_4_V_V |    pointer   |
+|layer11_out_s_4_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_4_V_V |    pointer   |
+|layer11_out_s_4_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_4_V_V |    pointer   |
+|layer11_out_5_address0       | out |    7|  ap_memory |     layer11_out_5    |     array    |
+|layer11_out_5_ce0            | out |    1|  ap_memory |     layer11_out_5    |     array    |
+|layer11_out_5_q0             |  in |    7|  ap_memory |     layer11_out_5    |     array    |
+|layer11_out_s_5_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_5_V_V |    pointer   |
+|layer11_out_s_5_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_5_V_V |    pointer   |
+|layer11_out_s_5_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_5_V_V |    pointer   |
+|layer11_out_6_address0       | out |    7|  ap_memory |     layer11_out_6    |     array    |
+|layer11_out_6_ce0            | out |    1|  ap_memory |     layer11_out_6    |     array    |
+|layer11_out_6_q0             |  in |    7|  ap_memory |     layer11_out_6    |     array    |
+|layer11_out_s_6_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_6_V_V |    pointer   |
+|layer11_out_s_6_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_6_V_V |    pointer   |
+|layer11_out_s_6_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_6_V_V |    pointer   |
+|layer11_out_7_address0       | out |    7|  ap_memory |     layer11_out_7    |     array    |
+|layer11_out_7_ce0            | out |    1|  ap_memory |     layer11_out_7    |     array    |
+|layer11_out_7_q0             |  in |    7|  ap_memory |     layer11_out_7    |     array    |
+|layer11_out_s_7_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_7_V_V |    pointer   |
+|layer11_out_s_7_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_7_V_V |    pointer   |
+|layer11_out_s_7_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_7_V_V |    pointer   |
+|layer11_out_8_address0       | out |    7|  ap_memory |     layer11_out_8    |     array    |
+|layer11_out_8_ce0            | out |    1|  ap_memory |     layer11_out_8    |     array    |
+|layer11_out_8_q0             |  in |    7|  ap_memory |     layer11_out_8    |     array    |
+|layer11_out_s_8_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_8_V_V |    pointer   |
+|layer11_out_s_8_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_8_V_V |    pointer   |
+|layer11_out_s_8_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_8_V_V |    pointer   |
+|layer11_out_9_address0       | out |    7|  ap_memory |     layer11_out_9    |     array    |
+|layer11_out_9_ce0            | out |    1|  ap_memory |     layer11_out_9    |     array    |
+|layer11_out_9_q0             |  in |    7|  ap_memory |     layer11_out_9    |     array    |
+|layer11_out_s_9_V_V_TDATA    | out |   16|    axis    |  layer11_out_s_9_V_V |    pointer   |
+|layer11_out_s_9_V_V_TVALID   | out |    1|    axis    |  layer11_out_s_9_V_V |    pointer   |
+|layer11_out_s_9_V_V_TREADY   |  in |    1|    axis    |  layer11_out_s_9_V_V |    pointer   |
+|layer11_out_10_address0      | out |    7|  ap_memory |    layer11_out_10    |     array    |
+|layer11_out_10_ce0           | out |    1|  ap_memory |    layer11_out_10    |     array    |
+|layer11_out_10_q0            |  in |    7|  ap_memory |    layer11_out_10    |     array    |
+|layer11_out_s_10_V_V_TDATA   | out |   16|    axis    | layer11_out_s_10_V_V |    pointer   |
+|layer11_out_s_10_V_V_TVALID  | out |    1|    axis    | layer11_out_s_10_V_V |    pointer   |
+|layer11_out_s_10_V_V_TREADY  |  in |    1|    axis    | layer11_out_s_10_V_V |    pointer   |
+|layer11_out_11_address0      | out |    7|  ap_memory |    layer11_out_11    |     array    |
+|layer11_out_11_ce0           | out |    1|  ap_memory |    layer11_out_11    |     array    |
+|layer11_out_11_q0            |  in |    7|  ap_memory |    layer11_out_11    |     array    |
+|layer11_out_s_11_V_V_TDATA   | out |   16|    axis    | layer11_out_s_11_V_V |    pointer   |
+|layer11_out_s_11_V_V_TVALID  | out |    1|    axis    | layer11_out_s_11_V_V |    pointer   |
+|layer11_out_s_11_V_V_TREADY  |  in |    1|    axis    | layer11_out_s_11_V_V |    pointer   |
+|layer11_out_12_address0      | out |    7|  ap_memory |    layer11_out_12    |     array    |
+|layer11_out_12_ce0           | out |    1|  ap_memory |    layer11_out_12    |     array    |
+|layer11_out_12_q0            |  in |    7|  ap_memory |    layer11_out_12    |     array    |
+|layer11_out_s_12_V_V_TDATA   | out |   16|    axis    | layer11_out_s_12_V_V |    pointer   |
+|layer11_out_s_12_V_V_TVALID  | out |    1|    axis    | layer11_out_s_12_V_V |    pointer   |
+|layer11_out_s_12_V_V_TREADY  |  in |    1|    axis    | layer11_out_s_12_V_V |    pointer   |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+
